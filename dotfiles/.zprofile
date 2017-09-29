@@ -64,11 +64,14 @@ fi
 
 ######## KevCaz's stuff #######
 
+####
+cat /etc/motd
+
 
 #### Alias
 
 # dropbox
-alias dbox='~/.dropbox-dist/dropboxd'
+alias dbox='~/.dropbox-dist/dropboxd &'
 
 # to display hidden files
 alias ls='ls -a'
@@ -77,7 +80,13 @@ alias ls='ls -a'
 alias finderit='open -a Finder'
 
 # todolist
-alias todo='nano ~/.todolist'
+alias todo='nano ~/ownCloud/todolist.md'
+
+# reading list
+alias toread='nano ~/.toread'
+
+# watching list 
+alias towatch='nano ~/.towatch'
 
 # tomamouth
 alias tomam='ssh kevcaz@dgravel-mp2.ccs.usherbrooke.ca'
@@ -85,12 +94,18 @@ alias tomam='ssh kevcaz@dgravel-mp2.ccs.usherbrooke.ca'
 # Find processus
 alias psgrep='ps aux | grep'
 
-# Go to Githu bdirectory
+# Go to Github bdirectory
 alias gh='cd ~/Github'
+alias ghr='cd ~/Github/Rpackages'
+alias ghw='cd ~/Github/Websites'
+
+
 
 # Update rpackage
-alias udrpkgs='sudo Rscript  -e "update.packages(ask=FALSE)"'
+alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
 
+# Launch InSileco website
+alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript -e "blogdown::serve_site()"'
 
 #### Functions
 
@@ -101,6 +116,18 @@ mygit() {
   git push;
 }
 
+# Get a ref from a DOI
+getRef() {
+ firefox http://sci-hub.cc/$1
+}
+
+# Get a pdf from a DOI 
+getPdf() {
+ wget "$(wget -qO- http://sci-hub.cc/$1 | grep iframe | grep -o 'https*://[^"]*')" -P ~/Downloads
+}
+
+
+
 ## New review
 newreview() {
   cd ~/Documents/Reviews;
@@ -110,7 +137,7 @@ newreview() {
 
 ## Install R packages
 rpkg() {
- sudo  Rscript --no-init-file  -e "install.packages('$1')";
+ sudo  Rscript --no-init-file  -e "install.packages('$1', repos='https://cran.wu.ac.at/')";
 }
 
 ## Convert a rmarkdown files

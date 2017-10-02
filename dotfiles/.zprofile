@@ -37,11 +37,6 @@ typeset -gU cdpath fpath mailpath path
 #   $cdpath
 # )
 
-# Set the list of directories that Zsh searches for programs.
-path=(
-  /usr/local/{bin,sbin}
-  $path
-)
 
 #
 # Less
@@ -64,9 +59,17 @@ fi
 
 ######## KevCaz's stuff #######
 
-####
-cat /etc/motd
+###
+# Set the list of directories that Zsh searches for programs.
+path=(
+  /usr/local/{bin,sbin}
+  /home/kevcaz/.local/{bin,sbin}
+  $path
+)
 
+
+####
+cat ~/.welcome
 
 #### Alias
 

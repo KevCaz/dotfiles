@@ -5,3 +5,8 @@ clone:
 	cp ~/.Rprofile $(cur)/dotfiles/
 	cp ~/.welcome $(cur)/dotfiles/
 	# cd .todolist $(cur)/dotfiles/
+
+deploy:
+	cp $(cur)/dotfiles/.zprofile ~/
+	cp $(cur)/dotfiles/.Rprofile ~/
+	cp $(cur)/dotfiles/.welcome ~/

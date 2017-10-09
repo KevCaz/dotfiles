@@ -5,15 +5,13 @@
 
 ##-- For random number
 set.seed(1987)
-##-- To set Quartz as the defaut graphical device
-# options(device="quartz")
-# options(editor="Atom")
+
 ##-- R interactive prompt
 options(prompt="R>> ")
 options(continue="+... ")
-options(width = 160)
+options(width = 180)
 options(repos="https://cran.wu.ac.at/")
-options(stringsAsFactor=FALSE)
+options(stringsAsFactors=FALSE)
 options(defaultPackages=c(
     getOption("defaultPackages"),
     "knitr",

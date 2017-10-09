@@ -101,7 +101,11 @@ alias psgrep='ps aux | grep'
 alias gh='cd ~/Github'
 alias ghr='cd ~/Github/Rpackages'
 alias ghw='cd ~/Github/Websites'
+alias ght='cd ~/Github/Tutorials'
+alias gho='cd ~/Github/Others'
 
+# open a file
+alias pop='xdg-open'
 
 
 # Update rpackage
@@ -144,7 +148,7 @@ rpkg() {
 }
 
 ## Convert a rmarkdown files
-convrmd() {
+rmdto() {
   Rscript --no-init-file -e "rmarkdown::render('$1', output_format = 'all')";
 }
 

@@ -158,6 +158,14 @@ topdf() {
   pandoc $1 -o ${1%.*}.pdf;
 }
 
+## Change extensions
+chgext() {
+  for file in *.$1
+  do
+    mv "$file" "${file%.$1}.$2"
+  done
+}
+
 ## Send to trash
 junk() { 
   mv "$@" ~/.Trash/; 

@@ -69,7 +69,7 @@ path=(
 
 
 ####
-cat ~/.welcome
+source ~/.welcome
 
 #### Alias
 
@@ -122,6 +122,24 @@ mygit() {
   git commit -m "$1";
   git push;
 }
+
+# Get a DOI using crossref https://stackoverflow.com/questions/9354847/concatenate-inputs-in-bash-script
+getDOI() {
+  request=""
+  for a in "$@" # Loop over arguments
+  do
+    if [[ "${a:0:1}" != "-" ]] # Ignore flags (first character is -)
+    then
+      if [[ "$request" != "" ]]
+      then
+        request+="+" # Delimeter
+      fi
+      request+="$a"
+    fi
+  done
+  firefox "https://search.crossref.org/?q=$request"
+}
+
 
 # Get a ref from a DOI
 getRef() {

@@ -114,6 +114,11 @@ alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=
 # Launch InSileco website
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript -e "blogdown::serve_site()"'
 
+# Backup 
+alias backupdocs='rsync -av ~/Documents /media/kevcaz/KL/backup'
+
+
+
 #### Functions
 
 # Classical git

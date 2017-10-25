@@ -116,7 +116,7 @@ alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript -e "blogdown::serv
 
 # Backup 
 alias backupdocs='rsync -av ~/Documents /media/kevcaz/KL/backup'
-
+alias backupzot='rsync -av ~/Zotero /media/kevcaz/KL/bacup'
 
 
 #### Functions

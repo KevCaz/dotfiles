@@ -22,6 +22,8 @@ options(defaultPackages=c(
     "letiRmisc"
     ))
 
+reset <- function() system('reset')
+
 
 ##-- function triggered when starting a new session
 .First <- function(){

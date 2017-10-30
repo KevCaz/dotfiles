@@ -5,6 +5,7 @@ clone:
 	cp ~/.Rprofile $(cur)/dotfiles/
 	cp ~/.welcome $(cur)/dotfiles/
 	cp ~/.zlogout $(cur)/dotfiles/
+	cp ~/.atom/*.cson $(cur)/dotfiles/
 	# cd .todolist $(cur)/dotfiles/
 
 deploy:

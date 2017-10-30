@@ -1,0 +1,57 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "3fc44686-334b-470e-a02a-e79f37adc049"
+  "autocomplete-bibtex":
+    bibtex: [
+      "/home/kevcaz/ownCloud/kevcaz.bib"
+    ]
+  core:
+    restorePreviousWindowsOnStart: "always"
+    telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    fontFamily: "Roboto Mono for powerline"
+    fontSize: 18
+    softWrap: true
+  "exception-reporting":
+    userId: "430591bf-bd2b-434b-a891-1910ce5c477f"
+  minimap: {}
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#263238"
+        blue: "#3461a4"
+        cyan: "#3de2f0"
+        green: "#12ae8e"
+        magenta: "#89097c"
+        red: "#d94d4d"
+        yellow: "#d5cd56"
+      zBright:
+        brightBlack: "#b1adad"
+        brightBlue: "#4481dc"
+        brightGreen: "#14deb5"
+        brightMagenta: "#cc0db8"
+        brightRed: "#f95959"
+    style:
+      defaultPanelHeight: "500px"
+      theme: "one-dark"
+  "r-exec":
+    whichApp: "Terminal"
+  "run-in-terminal":
+    launchdir: "gnome-terminal --working-directory  \"{working_directory}\""
+    launchers: ".py python, .java javac, .coffee coffee, .R R"
+    launchfile: "gnome-terminal --working-directory \"{working_directory}\" --execute \"{file_path}\" {args}"
+  "spell-check":
+    localePaths: [
+      "/usr/share/calibre/dictionaries"
+    ]
+    locales: [
+      "en-US"
+      "fr-FR"
+      "es-ES"
+    ]
+  "tree-view": {}

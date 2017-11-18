@@ -22,7 +22,7 @@ options(defaultPackages=c(
     "letiRmisc"
     ))
 ##-- X11 options 
-X11.options(width=10, height=10)
+grDevices::X11.options(width=10, height=10)
 
 
 ##-- few useful function

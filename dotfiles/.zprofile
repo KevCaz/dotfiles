@@ -167,7 +167,7 @@ newreview() {
 
 ## Install R packages
 rpkg() {
- sudo  Rscript --no-init-file  -e "install.packages('$1', repos='https://cran.wu.ac.at/')";
+ sudo Rscript --no-init-file  -e "install.packages('$1', repos='https://cran.wu.ac.at/')";
 }
 
 ## Convert a rmarkdown files

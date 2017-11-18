@@ -21,9 +21,13 @@ options(defaultPackages=c(
     "devtools",
     "letiRmisc"
     ))
+##-- X11 options 
+X11.options(width=10, height=10)
 
+
+##-- few useful function
 reset <- function() system('reset')
-
+nautilus <- function(x='.') system(paste0('nautilus ', x))
 
 ##-- function triggered when starting a new session
 .First <- function(){

@@ -108,6 +108,12 @@ alias gho='cd ~/Github/Others'
 alias pop='xdg-open'
 
 
+# change backlight
+
+alias mybl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
+
+
+
 # Update rpackage
 alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
 

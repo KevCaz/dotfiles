@@ -97,6 +97,9 @@ alias tomam='ssh kevcaz@dgravel-mp2.ccs.usherbrooke.ca'
 # Find processus
 alias psgrep='ps aux | grep'
 
+# Search in installed packages
+alias searchpkg='apt list --installed | grep'
+
 # Go to Github bdirectory
 alias gh='cd ~/Github'
 alias ghr='cd ~/Github/Rpackages'
@@ -109,9 +112,10 @@ alias pop='xdg-open'
 
 
 # change backlight
-
 alias mybl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
 
+# open tor 
+alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 
 
 # Update rpackage
@@ -126,6 +130,11 @@ alias backupzot='rsync -av ~/Zotero /media/kevcaz/KL/bacup'
 
 
 #### Functions
+
+# Search new package 
+findpkg() {
+  apt-cache search $1 | $1
+}
 
 # Classical git
 mygit() {

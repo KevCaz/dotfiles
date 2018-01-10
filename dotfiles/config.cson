@@ -15,11 +15,19 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 16
+    fontSize: 17
     softWrap: true
   "exception-reporting":
     userId: "430591bf-bd2b-434b-a891-1910ce5c477f"
-  minimap: {}
+  linter:
+    disabledProviders: [
+      "lintr"
+    ]
+  "linter-ui-default":
+    panelHeight: 79
+    showPanel: true
+  minimap:
+    adjustAbsoluteModeHeight: true
   "platformio-ide-terminal":
     ansiColors:
       normal:
@@ -56,4 +64,5 @@
       "fr-FR"
       "es-ES"
     ]
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true

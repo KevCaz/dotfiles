@@ -6,6 +6,8 @@ clone:
 	cp ~/.welcome $(cur)/dotfiles/
 	cp ~/.zlogout $(cur)/dotfiles/
 	cp ~/.atom/*.cson $(cur)/dotfiles/
+	cp ~/.atom/*.cson $(cur)/dotfiles/
+	cp ~/Github/Rpackages/pkg2date.R $(cur)/config/
 	# cd .todolist $(cur)/dotfiles/
 
 deploy:

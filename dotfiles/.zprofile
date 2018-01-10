@@ -117,6 +117,9 @@ alias mybl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
 # open tor 
 alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 
+# update debian packages
+alias updeb='sudo apt-get update && sudo apt-get upgrade'
+
 
 # Update rpackage
 alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'

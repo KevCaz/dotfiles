@@ -110,6 +110,10 @@ alias gho='cd ~/Github/Others'
 # open a file
 alias pop='xdg-open'
 
+# power off and reboot 
+alias pwo='sudo poweroff'
+alias pwr='sudo reboot'
+
 
 # change backlight
 alias mybl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
@@ -128,9 +132,9 @@ alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript -e "blogdown::serve_site()"'
 
 # Backup 
-alias backupdocs='rsync -av ~/Documents /media/kevcaz/KL/backup'
-alias backupzot='rsync -av ~/Zotero /media/kevcaz/KL/bacup'
-
+alias backupdc='rsync -av ~/Documents /media/kevcaz/KL/backup'
+alias backupzo='rsync -av ~/Zotero /media/kevcaz/KL/backup'
+alias backupgh='rsync -av ~/Github /media/kevcaz/KL/backup'
 
 #### Functions
 

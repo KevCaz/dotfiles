@@ -9,7 +9,7 @@ set.seed(1987)
 ##-- R interactive prompt
 options(prompt="R>> ")
 options(continue="+... ")
-options(width = 180)
+options(width = 160)
 options(repos="https://cran.wu.ac.at/")
 options(stringsAsFactors=FALSE)
 options(defaultPackages=c(

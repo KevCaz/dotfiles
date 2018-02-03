@@ -6,10 +6,7 @@
     bibtex: [
       "/home/kevcaz/ownCloud/kevcaz.bib"
     ]
-  "autocomplete-plus":
-    enableBuiltinProvider: false
   core:
-    restorePreviousWindowsOnStart: "always"
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
@@ -17,10 +14,10 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 22
+    fontSize: 20
     softWrap: true
   "exception-reporting":
-    userId: "430591bf-bd2b-434b-a891-1910ce5c477f"
+    userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
   "julia-client":
     firstBoot: false
   linter:
@@ -47,13 +44,13 @@
         brightGreen: "#14deb5"
         brightMagenta: "#cc0db8"
         brightRed: "#f95959"
-    core:
-      scrollback: 2000
     style:
+      core:
+        scrollback: 2000
       defaultPanelHeight: "500px"
-      theme: "one-dark"
-    toggles:
-      selectToCopy: false
+      theme: "solarized-dark"
+      toggles:
+        selectToCopy: false
   "spell-check":
     addKnownWords: true
     grammars: [
@@ -65,5 +62,5 @@
     ]
     locales: [
       "en-US"
+      "fr-CA"
     ]
-  "tree-view": {}

@@ -10,6 +10,7 @@ set.seed(1987)
 options(prompt="R>> ")
 options(continue="+... ")
 options(width = 160)
+options(max.print = 1000)
 options(repos="https://cran.wu.ac.at/")
 options(stringsAsFactors=FALSE)
 options(defaultPackages=c(

@@ -6,6 +6,8 @@
     bibtex: [
       "/home/kevcaz/ownCloud/kevcaz.bib"
     ]
+  "autocomplete-plus":
+    enableBuiltinProvider: false
   core:
     restorePreviousWindowsOnStart: "always"
     telemetryConsent: "limited"
@@ -15,16 +17,17 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 20
+    fontSize: 22
     softWrap: true
   "exception-reporting":
     userId: "430591bf-bd2b-434b-a891-1910ce5c477f"
+  "julia-client":
+    firstBoot: false
   linter:
     disabledProviders: [
       "lintr"
     ]
   "linter-ui-default":
-    panelHeight: 79
     showPanel: true
   minimap:
     adjustAbsoluteModeHeight: true
@@ -45,24 +48,22 @@
         brightMagenta: "#cc0db8"
         brightRed: "#f95959"
     core:
-      scrollback: 500
+      scrollback: 2000
     style:
       defaultPanelHeight: "500px"
       theme: "one-dark"
-  "r-exec":
-    whichApp: "Terminal"
-  "run-in-terminal":
-    launchdir: "gnome-terminal --working-directory  \"{working_directory}\""
-    launchers: ".py python, .java javac, .coffee coffee, .R R"
-    launchfile: "gnome-terminal --working-directory \"{working_directory}\" --execute \"{file_path}\" {args}"
+    toggles:
+      selectToCopy: false
   "spell-check":
-    localePaths: [
-      "/usr/share/calibre/dictionaries"
+    addKnownWords: true
+    grammars: [
+      "source.asciidoc"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.gfm"
     ]
     locales: [
       "en-US"
-      "fr-FR"
-      "es-ES"
     ]
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}

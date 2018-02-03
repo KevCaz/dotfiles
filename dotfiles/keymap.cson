@@ -32,4 +32,5 @@
   'cmd-alt-t': 'insert-tee-operator'
   'cmd-alt-y': 'insert-tee-print'
   'cmd-alt-b': 'insert-breakline'
+  'cmd-alt-f': 'insert-shortcode'
   'ctrl-alt-enter': 'platformio-ide-terminal:insert-selected-text'

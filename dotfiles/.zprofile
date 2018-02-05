@@ -88,7 +88,7 @@ alias todo='nano ~/ownCloud/todolist.md'
 # reading list
 alias toread='nano ~/.toread'
 
-# watching list 
+# watching list
 alias towatch='nano ~/.towatch'
 
 # tomamouth
@@ -110,7 +110,7 @@ alias gho='cd ~/Github/Others'
 # open a file
 alias pop='xdg-open'
 
-# power off and reboot 
+# power off and reboot
 alias pwo='sudo poweroff'
 alias pwr='sudo reboot'
 
@@ -118,7 +118,7 @@ alias pwr='sudo reboot'
 # change backlight
 alias mybl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
 
-# open tor 
+# open tor
 alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 
 # update debian packages
@@ -131,14 +131,14 @@ alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=
 # Launch InSileco website
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript -e "blogdown::serve_site()"'
 
-# Backup 
+# Backup
 alias backupdc='rsync -av ~/Documents /media/kevcaz/KL/backup'
 alias backupzo='rsync -av ~/Zotero /media/kevcaz/KL/backup'
 alias backupgh='rsync -av ~/Github /media/kevcaz/KL/backup'
-
+alias backall='backupdc; backupzo; backupgh'
 #### Functions
 
-# Search new package 
+# Search new package
 findpkg() {
   apt-cache search $1 | $1
 }
@@ -173,7 +173,7 @@ getRef() {
  firefox http://sci-hub.cc/$1
 }
 
-# Get a pdf from a DOI 
+# Get a pdf from a DOI
 getPdf() {
  wget "$(wget -qO- http://sci-hub.cc/$1 | grep iframe | grep -o 'https*://[^"]*')" -P ~/Downloads
 }
@@ -212,7 +212,6 @@ chgext() {
 }
 
 ## Send to trash
-junk() { 
-  mv "$@" ~/.Trash/; 
+junk() {
+  mv "$@" ~/.Trash/;
  }
-

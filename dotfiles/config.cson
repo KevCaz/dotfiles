@@ -14,7 +14,7 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 20
+    fontSize: 21
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -31,7 +31,7 @@
   "platformio-ide-terminal":
     ansiColors:
       normal:
-        black: "#263238"
+        black: "#042029"
         blue: "#3461a4"
         cyan: "#3de2f0"
         green: "#12ae8e"
@@ -64,3 +64,5 @@
       "en-US"
       "fr-CA"
     ]
+  "tree-view":
+    hideVcsIgnoredFiles: true

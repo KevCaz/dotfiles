@@ -6,7 +6,14 @@
     bibtex: [
       "/home/kevcaz/ownCloud/kevcaz.bib"
     ]
+  "autocomplete-emojis":
+    enableUnicodeEmojis: false
+  "autocomplete-plus": {}
   core:
+    disabledPackages: [
+      "ink"
+      "language-hugo"
+    ]
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
@@ -14,7 +21,7 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 21
+    fontSize: 17
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -23,9 +30,9 @@
   linter:
     disabledProviders: [
       "lintr"
+      "cpplint"
     ]
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   minimap:
     adjustAbsoluteModeHeight: true
   "platformio-ide-terminal":
@@ -64,5 +71,12 @@
       "en-US"
       "fr-CA"
     ]
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    scrollSyncType: "Vertical + Horizontal"
+  "tree-view": {}
+  welcome:
+    showOnStartup: false

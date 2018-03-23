@@ -38,7 +38,7 @@ if (!tmp) {
   devtools::document(".")
   decor()
   ## testing the code
-  if (dir.exists("tests")){
+  if (tmp>1 & dir.exists("tests")){
     cat("##-- testing ........\n")
     devtools::test()
     decor()

@@ -4,7 +4,6 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
-
 #
 # Browser
 #
@@ -57,7 +56,7 @@ fi
 
 
 
-######## KevCaz's stuff #######
+##### KevCaz's setup  #####
 
 ###
 # Set the list of directories that Zsh searches for programs.
@@ -66,10 +65,9 @@ path=(
   /home/kevcaz/.local/{bin,sbin}
   $path
 )
-
-
-####
+# welcome
 source ~/.welcome
+
 
 #### Alias
 
@@ -91,8 +89,16 @@ alias toread='nano ~/.toread'
 # watching list
 alias towatch='nano ~/.towatch'
 
-# tomamouth
+# Get access to Mp2
 alias tomam='ssh kevcaz@dgravel-mp2.ccs.usherbrooke.ca'
+# Send something to Mp2
+sendtomam() {
+  scp -rp $1 kevcaz@dgravel-mp2.ccs.usherbrooke.ca:${2-./}
+}
+# Get from Mp2
+getfrommam() {
+  scp -rp kevcaz@dgravel-mp2.ccs.usherbrooke.ca:$1 $2
+}
 
 # Find processus
 alias psgrep='ps aux | grep'
@@ -106,6 +112,7 @@ alias ghr='cd ~/Github/Rpackages'
 alias ghw='cd ~/Github/Websites'
 alias ght='cd ~/Github/Tutorials'
 alias gho='cd ~/Github/Others'
+alias ghg='cd ~/Github/gists'
 
 # open a file
 alias pop='xdg-open'
@@ -125,16 +132,16 @@ alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
 
 
-# Update rpackage
+# ppdate rpackage
 alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
 
-# Launch InSileco website
+# launch InSileco website
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript -e "blogdown::serve_site()"'
 
 # Backup
-alias backupdc='rsync -av ~/Documents /media/kevcaz/KL/backup'
-alias backupzo='rsync -av ~/Zotero /media/kevcaz/KL/backup'
-alias backupgh='rsync -av ~/Github /media/kevcaz/KL/backup'
+alias backupdc='rsync -av ~/Documents /media/kevcaz/KF/backup'
+alias backupzo='rsync -av ~/Zotero /media/kevcaz/KF/backup'
+alias backupgh='rsync -av ~/Github /media/kevcaz/KF/backup'
 alias backall='backupdc; backupzo; backupgh'
 #### Functions
 

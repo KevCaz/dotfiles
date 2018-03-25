@@ -8,6 +8,8 @@
     ]
   "autocomplete-emojis":
     enableUnicodeEmojis: false
+  "autocomplete-font-awesome":
+    version: "4.7.0"
   "autocomplete-plus": {}
   core:
     disabledPackages: [

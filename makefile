@@ -8,6 +8,7 @@ clone:
 	cp ~/.Rprofile $(cur)/dotfiles/
 	cp ~/.welcome $(cur)/dotfiles/
 	cp /etc/apt/sources.list $(cur)/config/
+	cp -r /etc/apt/sources.list.d/ $(cur)/config/
 	cp ~/.atom/*.cson $(cur)/config/
 	cp ~/.atom/*.coffee $(cur)/config/
 	cp ~/Github/Rpackages/pkg2date.R $(cur)/config/

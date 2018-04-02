@@ -1,0 +1,29 @@
+# main repo
+deb http://debian.mirror.rafal.ca/debian/ stretch main contrib non-free
+deb-src http://debian.mirror.rafal.ca/debian/ stretch main
+deb http://security.debian.org/debian-security stretch/updates main
+deb-src http://security.debian.org/debian-security stretch/updates main
+
+# stretch-updates, previously known as 'volatile'
+deb http://debian.mirror.rafal.ca/debian/ stretch-updates main
+deb-src http://debian.mirror.rafal.ca/debian/ stretch-updates main
+
+# R verison 3.4.x 
+deb http://cran.utstat.utoronto.ca/bin/linux/debian stretch-cran34/
+
+# Qgis
+deb http://qgis.org/debian stretch main
+deb-src http://qgis.org/debian stretch main
+
+# Docker
+deb [arch=amd64] https://download.docker.com/linux/debian stretch stable
+deb-src [arch=amd64] https://download.docker.com/linux/debian stretch stable
+
+# Tor 
+deb http://deb.torproject.org/torproject.org stretch main
+deb-src http://deb.torproject.org/torproject.org stretch main
+
+# Papirus' icons 
+deb http://ppa.launchpad.net/papirus/papirus/ubuntu xenial main
+deb-src http://ppa.launchpad.net/papirus/papirus/ubuntu xenial main
+

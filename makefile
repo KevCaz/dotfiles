@@ -7,8 +7,9 @@ clone:
 	cp ~/.zlog* $(cur)/dotfiles/
 	cp ~/.Rprofile $(cur)/dotfiles/
 	cp ~/.welcome $(cur)/dotfiles/
-	cp ~/.atom/*.cson $(cur)/dotfiles/
-	cp ~/.atom/*.coffee $(cur)/dotfiles/
+	cp /etc/apt/sources.list $(cur)/config/
+	cp ~/.atom/*.cson $(cur)/config/
+	cp ~/.atom/*.coffee $(cur)/config/
 	cp ~/Github/Rpackages/pkg2date.R $(cur)/config/
 	# cd .todolist $(cur)/dotfiles/
 

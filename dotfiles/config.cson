@@ -2,6 +2,7 @@
   "atom-beautify":
     general:
       _analyticsUserId: "3fc44686-334b-470e-a02a-e79f37adc049"
+    r: {}
   "autocomplete-bibtex":
     bibtex: [
       "/home/kevcaz/ownCloud/kevcaz.bib"
@@ -23,7 +24,7 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 17
+    fontSize: 18
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -82,3 +83,5 @@
   "tree-view": {}
   welcome:
     showOnStartup: false
+  wordcount:
+    alwaysOn: true

@@ -22,5 +22,5 @@
 
 '.source.gfm':
   'Fontawesome':
-    'prefix': 'fta'
+    'prefix': 'fa'
     'body': '<i class="fa fa-$1" aria-hidden="true"></i>$2'

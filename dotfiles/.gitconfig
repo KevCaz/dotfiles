@@ -11,3 +11,5 @@
 	editor = nano
 [credential]
 	helper = cache --timeout 7200
+[alias]
+	last = log -1 HEAD

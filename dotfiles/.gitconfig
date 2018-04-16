@@ -1,0 +1,13 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[user]
+	name = Kevin Cazelles
+	email = kcazelle@uoguelph.ca
+[github]
+	user = KevCaz
+[core]
+	editor = nano
+[credential]
+	helper = cache --timeout 7200

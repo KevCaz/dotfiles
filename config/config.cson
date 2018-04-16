@@ -3,6 +3,8 @@
     general:
       _analyticsUserId: "3fc44686-334b-470e-a02a-e79f37adc049"
     r: {}
+  "atom-ide-ui":
+    use: {}
   "autocomplete-bibtex":
     bibtex: [
       "/home/kevcaz/ownCloud/kevcaz.bib"
@@ -16,6 +18,9 @@
     disabledPackages: [
       "ink"
       "language-hugo"
+      "linter"
+      "ide-r"
+      "atom-ide-ui"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -24,7 +29,7 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 19
+    fontSize: 17
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -35,7 +40,9 @@
       "lintr"
       "cpplint"
     ]
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 300
+    showPanel: true
   minimap:
     adjustAbsoluteModeHeight: true
   "platformio-ide-terminal":

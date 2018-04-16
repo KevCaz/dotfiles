@@ -1,6 +1,7 @@
 cur = $(shell pwd)
 
 clone:
+	cp ~/.gitconfig $(cur)/dotfiles/
 	cp ~/.zprofile $(cur)/dotfiles/
 	cp ~/.zprofile $(cur)/dotfiles/
 	cp ~/.zpreztorc $(cur)/dotfiles/

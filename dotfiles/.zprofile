@@ -74,6 +74,9 @@ source ~/.welcome
 # dropbox
 alias dbox='~/.dropbox-dist/dropboxd &'
 
+# firefox stable
+alias fire='snap run firefox &'
+
 # to display hidden files
 alias ls='ls -a'
 
@@ -142,7 +145,8 @@ alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript -e "blogdown::serv
 alias backupdc='rsync -av ~/Documents /media/kevcaz/KF/backup'
 alias backupzo='rsync -av ~/Zotero /media/kevcaz/KF/backup'
 alias backupgh='rsync -av ~/Github /media/kevcaz/KF/backup'
-alias backall='backupdc; backupzo; backupgh'
+alias backupca='rsync -av ~/Calibre /media/kevcaz/KF/backup'
+alias backall='backupdc; backupzo; backupgh; backupca'
 #### Functions
 
 # Search new package

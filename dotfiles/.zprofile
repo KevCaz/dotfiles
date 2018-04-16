@@ -156,8 +156,7 @@ findpkg() {
 
 # Classical git
 mygit() {
-  git add -A;
-  git commit -m "$1";
+  git commit -a  -m "$1";
   git push;
 }
 

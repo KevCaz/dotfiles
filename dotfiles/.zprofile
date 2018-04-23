@@ -106,6 +106,9 @@ getfrommam() {
 # Find processus
 alias psgrep='ps aux | grep'
 
+# Search in Zotero databae 
+searchzot='grep -rnw Zotero/storage/ -e'
+
 # Search in installed packages
 alias searchpkg='apt list --installed | grep'
 

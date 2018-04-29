@@ -4,6 +4,8 @@
       _analyticsUserId: "3fc44686-334b-470e-a02a-e79f37adc049"
     r: {}
   "atom-ide-ui":
+    "atom-ide-terminal":
+      fontFamily: "Droid Sans Mono for powerline bold, courier-new, courier, monospace"
     use: {}
   "autocomplete-bibtex":
     bibtex: [
@@ -29,7 +31,7 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 18
+    fontSize: 16
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -40,9 +42,7 @@
       "lintr"
       "cpplint"
     ]
-  "linter-ui-default":
-    panelHeight: 300
-    showPanel: true
+  "linter-ui-default": {}
   minimap:
     adjustAbsoluteModeHeight: true
   "platformio-ide-terminal":

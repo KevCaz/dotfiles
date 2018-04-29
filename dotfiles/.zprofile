@@ -106,8 +106,11 @@ getfrommam() {
 # Find processus
 alias psgrep='ps aux | grep'
 
-# Search in Zotero databae 
-searchzot='grep -rnw Zotero/storage/ -e'
+# Searches
+# Search in Zotero database
+alias searchzot='grep -rnw ~/Zotero/storage/ -e'
+# Search in all docs
+alias searchdoc='grep -rnw /home/kevcaz/ -e'
 
 # Search in installed packages
 alias searchpkg='apt list --installed | grep'
@@ -137,8 +140,7 @@ alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 # update debian packages
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
 
-
-# ppdate rpackage
+# ppdate rpackages
 alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
 
 # launch InSileco website
@@ -159,7 +161,7 @@ findpkg() {
 
 # Classical git
 mygit() {
-  git commit -a  -m "$1";
+  git commit -a -m "$1";
   git push;
 }
 

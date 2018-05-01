@@ -13,3 +13,4 @@
 	helper = cache --timeout 7200
 [alias]
 	last = log -1 HEAD
+	mylog = log --oneline --graph

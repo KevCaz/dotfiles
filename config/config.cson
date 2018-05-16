@@ -23,6 +23,7 @@
       "linter"
       "ide-r"
       "atom-ide-ui"
+      "language-markdown"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -31,7 +32,6 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 16
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -76,10 +76,10 @@
       "text.plain"
       "text.plain.null-grammar"
       "source.gfm"
+      "text.md"
     ]
     locales: [
       "en-US"
-      "fr-CA"
     ]
   "split-diff":
     diffWords: true
@@ -87,8 +87,13 @@
     leftEditorColor: "red"
     rightEditorColor: "green"
     scrollSyncType: "Vertical + Horizontal"
-  "tree-view": {}
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
   wordcount:
     alwaysOn: true
+".md.text":
+  editor:
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true

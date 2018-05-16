@@ -14,3 +14,4 @@
 [alias]
 	last = log -1 HEAD
 	mylog = log --oneline --graph
+	all = add -A

@@ -7,12 +7,14 @@
 set.seed(1987)
 
 ##-- R interactive prompt
-options(prompt="R>> ")
-options(continue="+... ")
-options(width = 160)
-options(max.print = 1000)
-options(repos="https://cran.wu.ac.at/")
-options(stringsAsFactors=FALSE)
+options(
+  prompt = "R>> ",
+  continue = "+... ",
+  width = 160,
+  max.print = 1000,
+  repos = "https://cran.wu.ac.at/",
+  stringsAsFactors = FALSE
+)
 options(defaultPackages=c(
     getOption("defaultPackages"),
     "knitr",
@@ -20,9 +22,9 @@ options(defaultPackages=c(
     "magrittr",
     "graphicsutils",
     "devtools",
-    "letiRmisc"
+    "inSilecoMisc"
     ))
-##-- X11 options 
+##-- X11 options
 grDevices::X11.options(width=10, height=10)
 
 
@@ -30,15 +32,17 @@ grDevices::X11.options(width=10, height=10)
 reset <- function() system('reset')
 nautilus <- function(x='.') system(paste0('nautilus ', x))
 
+deco <- function(char = "-", n = 10) paste(rep(char, n), collapse="")
+
 ##-- function triggered when starting a new session
 .First <- function(){
-    cat("\n", paste(rep("=",30), collapse=""), " KevCaz 92 Hijo ",
-    paste(rep("=",24), collapse=""), "\n >>", date(), " \n\n") ;
+    cat("\n", paste0(deco("=", n = 28), ">>"), " KevCaz 92 Hijo ",
+    paste0("<<", deco("=", n = 28)), "\n >>", date(), " \n\n") ;
 }
 
 ##-- function triggered when exiting a new session
 .Last <- function(){
     graphics.off()
-    cat("\n",paste(rep("=",28), collapse="") , "Até mais KevCaz!",
-    paste(rep("=",28), collapse=""),"\n") ;
+    cat("\n", paste0(deco("~", n = 28), "<") , " Até mais KevCaz! ",
+    paste0(">", deco("~", n = 28)),"\n") ;
 }

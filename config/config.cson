@@ -9,7 +9,7 @@
     use: {}
   "autocomplete-bibtex":
     bibtex: [
-      "/home/kevcaz/ownCloud/kevcaz.bib"
+      "/home/kevcaz/Dropbox/kevcaz.bib"
     ]
   "autocomplete-emojis":
     enableUnicodeEmojis: false
@@ -21,9 +21,12 @@
       "ink"
       "language-hugo"
       "linter"
+      "language-markdown"
+      "markdown-preview-enhanced"
+      "language-r"
       "ide-r"
       "atom-ide-ui"
-      "language-markdown"
+      "linter-lintr"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -32,6 +35,7 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
+    fontSize: 15
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -88,7 +92,7 @@
     rightEditorColor: "green"
     scrollSyncType: "Vertical + Horizontal"
   "tree-view":
-    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   wordcount:

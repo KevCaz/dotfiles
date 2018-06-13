@@ -19,7 +19,7 @@ cat(decoreq(.5*ndc-2), " START ", decoreq(.5*ndc-2), "\n\n")
 
 if (!tmp) {
   ##
-  devtools::load_all(".")
+  devtools::load_all()
   rmarkdown::render("README.Rmd", "all", quiet=TRUE)
   ##
   cat(decoreq(.5*ndc-7), " README UPDATED ", decoreq(.5*ndc-6), "\n\n")

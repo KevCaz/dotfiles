@@ -35,7 +35,7 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 15
+    fontSize: 16
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -91,8 +91,7 @@
     leftEditorColor: "red"
     rightEditorColor: "green"
     scrollSyncType: "Vertical + Horizontal"
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
   wordcount:

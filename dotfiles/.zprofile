@@ -84,7 +84,7 @@ alias ls='ls -a'
 alias finderit='open -a Finder'
 
 # todolist
-alias todo='nano ~/ownCloud/todolist.md'
+alias todo='atom -a ~/Dropbox/_drafts/todo.md'
 
 # reading list
 alias toread='nano ~/.toread'

@@ -5,7 +5,7 @@
 ##-- Set the RNG
 set.seed(1987)
 
-##-- options (exlicit enough)
+##-- options (explicit enough)
 options(
   prompt = "R>> ",
   continue = "+... ",
@@ -14,15 +14,6 @@ options(
   repos = "https://cran.wu.ac.at/",
   stringsAsFactors = FALSE
 )
-options(defaultPackages=c(
-    getOption("defaultPackages"),
-    "inSilecoMisc",
-    "devtools",
-    "knitr",
-    "magrittr",
-    "graphicsutils",
-    "rmarkdown"
-    ))
 ##-- X11 options
 grDevices::X11.options(width=10, height=10)
 

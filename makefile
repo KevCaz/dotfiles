@@ -13,6 +13,7 @@ clone:
 	cp ~/.atom/*.cson $(cur)/config/
 	cp ~/.atom/*.coffee $(cur)/config/
 	cp ~/Github/Rpackages/pkg2date.R $(cur)/config/
+	cp /usr/lib/R/etc/Renviron.site $(cur)/config/
 	# cd .todolist $(cur)/dotfiles/
 
 deploy:

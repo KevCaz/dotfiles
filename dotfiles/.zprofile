@@ -140,11 +140,11 @@ alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 # update debian packages
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
 
-# ppdate rpackages
+# update R packages
 alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
 
 # launch InSileco website
-alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript -e "blogdown::serve_site()"'
+alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-init-file -e "blogdown::serve_site()"'
 
 # Backup
 alias backupdc='rsync -av ~/Documents /media/kevcaz/KF/backup'

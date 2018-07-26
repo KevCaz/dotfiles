@@ -17,6 +17,8 @@ options(
 ##-- X11 options
 grDevices::X11.options(width=10, height=10)
 
+##
+#.libPaths("/home/kevcaz/R/x86_64-pc-linux-gnu-library/3.5")
 
 ##-- few useful functions
 reset <- function() system('reset')

@@ -71,6 +71,9 @@ source ~/.welcome
 
 #### Alias
 
+# atom add current 
+atad='atom -a .'
+
 # dropbox
 alias dbox='~/.dropbox-dist/dropboxd &'
 

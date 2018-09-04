@@ -23,11 +23,11 @@
       "language-hugo"
       "linter"
       "language-markdown"
-      "markdown-preview-enhanced"
       "language-r"
       "ide-r"
       "atom-ide-ui"
       "linter-lintr"
+      "markdown-preview-enhanced"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -86,6 +86,7 @@
     ]
     locales: [
       "en-US"
+      "fr-FR"
     ]
   "split-diff":
     diffWords: true

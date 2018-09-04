@@ -13,6 +13,7 @@ clone:
 	cp ~/.atom/*.cson $(cur)/config/
 	cp ~/.atom/*.coffee $(cur)/config/
 	cp ~/Github/Rpackages/pkg2date.R $(cur)/config/
+	cp ~/Documents/Admin/Signatures/signature.html $(cur)/other/
 	# cd .todolist $(cur)/dotfiles/
 
 deploy:

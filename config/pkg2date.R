@@ -25,10 +25,10 @@ if (!tmp) {
   cat(decoreq(.5*ndc-7), " README UPDATED ", decoreq(.5*ndc-6), "\n\n")
 } else {
   ## format the code
-  cat("##-- tidying ........\n")
-  formatR::tidy_dir("./R")
-  formatR::tidy_dir("./tests/test_that")
-  decor()
+  # cat("##-- tidying ........\n")
+  # formatR::tidy_dir("./R", width.cutoff = 80)
+  # formatR::tidy_dir("./tests/test_that", width.cutoff = 80)
+  # decor()
   ## load the package
   cat("##-- loading ........\n")
   devtools::load_all(".")

@@ -56,9 +56,9 @@ fi
 
 
 
-##### KevCaz's setup  #####
+########## KevCaz's setup  ##########
 
-###
+### Welcome
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
@@ -71,7 +71,7 @@ source ~/.welcome
 
 #### Alias
 
-# atom add current 
+# atom add current
 atad='atom -a .'
 
 # dropbox
@@ -110,21 +110,22 @@ getfrommam() {
 alias psgrep='ps aux | grep'
 
 # Searches
-# Search in Zotero database
-alias searchzot='grep -rnw ~/Zotero/storage/ -e'
-# Search in all docs
-alias searchdoc='grep -rnw /home/kevcaz/ -e'
+## Search in Zotero database
+alias seazot='grep -rnw ~/Zotero/storage/ -e'
+## Search in all docs
+alias seadoc='grep -rnw /home/kevcaz/ -e'
+## Search in installed packages
+alias seapkgi='apt-get list --installed | grep'
 
-# Search in installed packages
-alias searchpkg='apt list --installed | grep'
-
-# Go to Github bdirectory
+# Go to Github directories
 alias gh='cd ~/Github'
-alias ghr='cd ~/Github/Rpackages'
-alias ghw='cd ~/Github/Websites'
-alias ght='cd ~/Github/Tutorials'
+alias gha='cd ~/Github/Applications'
+alias ghg='cd ~/Github/Gists'
 alias gho='cd ~/Github/Others'
-alias ghg='cd ~/Github/gists'
+alias ghr='cd ~/Github/Rpackages'
+alias ghs='cd ~/Github/Studies'
+alias ght='cd ~/Github/Tutorials'
+alias ghw='cd ~/Github/Websites'
 
 # open a file
 alias pop='xdg-open'
@@ -140,13 +141,17 @@ alias mybl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
 # open tor
 alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 
-# update debian packages
-alias updeb='sudo apt-get update && sudo apt-get upgrade'
+# open Julia
+alias julia='~/Github/Applications/julia/julia'
 
-# update R packages
+
+# R
+## update debian packages
+alias updeb='sudo apt-get update && sudo apt-get upgrade'
+## update R packages
 alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
 
-# launch InSileco website
+# launch inSileco local website
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-init-file -e "blogdown::serve_site()"'
 
 # Backup
@@ -155,11 +160,14 @@ alias backupzo='rsync -av ~/Zotero /media/kevcaz/KF/backup'
 alias backupgh='rsync -av ~/Github /media/kevcaz/KF/backup'
 alias backupca='rsync -av ~/Calibre /media/kevcaz/KF/backup'
 alias backall='backupdc; backupzo; backupgh; backupca'
+
+
+
 #### Functions
 
 # Search new package
 findpkg() {
-  apt-cache search $1 | $1
+  apt-cache search $1 | grep $1
 }
 
 # Classical git
@@ -186,17 +194,14 @@ getDOI() {
   firefox "https://search.crossref.org/?q=$request"
 }
 
-
 # Get a ref from a DOI
 getRef() {
- firefox http://sci-hub.cc/$1
+ firefox http://sci-hub.tw$1
 }
-
 # Get a pdf from a DOI
 getPdf() {
- wget "$(wget -qO- http://sci-hub.cc/$1 | grep iframe | grep -o 'https*://[^"]*')" -P ~/Downloads
+ wget "$(wget -qO- http://sci-hub.tw/$1 | grep iframe | grep -o 'https*://[^"]*')" -P ~/Downloads
 }
-
 
 
 ## New review

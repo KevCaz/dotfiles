@@ -28,6 +28,7 @@
       "atom-ide-ui"
       "linter-lintr"
       "markdown-preview-enhanced"
+      "markdown-to-html"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -36,7 +37,7 @@
     ]
   editor:
     fontFamily: "Roboto Mono for powerline"
-    fontSize: 22
+    fontSize: 21
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -81,6 +82,7 @@
       "text.plain"
       "text.plain.null-grammar"
       "source.gfm"
+      "source.gfm.rmd"
       "text.md"
       "text.Rmd"
       "text.tex.latex"

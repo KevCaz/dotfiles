@@ -69,10 +69,10 @@ path=(
 source ~/.welcome
 
 
-#### Alias
+######################### ALIAS
 
 # atom add current
-atad='atom -a .'
+alias atad='atom -a .'
 
 # dropbox
 alias dbox='~/.dropbox-dist/dropboxd &'
@@ -83,17 +83,22 @@ alias fire='snap run firefox &'
 # to display hidden files
 alias ls='ls -a'
 
-# to display current a directory within the finder
-alias finderit='open -a Finder'
-
 # todolist
 alias todo='atom -a ~/Dropbox/_drafts/todo.md'
-
 # reading list
 alias toread='nano ~/.toread'
-
 # watching list
 alias towatch='nano ~/.towatch'
+
+# Remoote access to my MacOS machine
+alias tomac='ssh KevCaz@10.0.1.8'
+sendtomac() {
+  scp -rp $1 KevCaz@10.0.1.8:${2-./}
+}
+getfrommac() {
+  scp -rp KevCaz@10.0.1.8:$1 $2
+}
+
 
 # Get access to Mp2
 alias tomam='ssh kevcaz@dgravel-mp2.ccs.usherbrooke.ca'
@@ -144,6 +149,8 @@ alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 # open Julia
 alias julia='~/Github/Applications/julia/julia'
 
+# open sage
+alias sage='~/Github/Applications/sage/sage'
 
 # R
 ## update debian packages
@@ -151,6 +158,9 @@ alias updeb='sudo apt-get update && sudo apt-get upgrade'
 ## update R packages
 alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
 
+# Website
+# launch my website
+alias hukev='cd ~/Github/Websites/kevcaz.github.io; firefox http://localhost:1313/; hugo server'
 # launch inSileco local website
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-init-file -e "blogdown::serve_site()"'
 
@@ -163,7 +173,8 @@ alias backall='backupdc; backupzo; backupgh; backupca'
 
 
 
-#### Functions
+
+######################### FUNCTIONS
 
 # Search new package
 findpkg() {
@@ -203,7 +214,6 @@ getPdf() {
  wget "$(wget -qO- http://sci-hub.tw/$1 | grep iframe | grep -o 'https*://[^"]*')" -P ~/Downloads
 }
 
-
 ## New review
 newreview() {
   cd ~/Documents/Reviews;
@@ -220,7 +230,6 @@ rpkg() {
 rmdto() {
   Rscript --no-init-file -e "rmarkdown::render('$1', output_format = 'all')";
 }
-
 
 ## Convert a file to pdf using pandoc
 topdf() {

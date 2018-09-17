@@ -40,7 +40,6 @@ typeset -gU cdpath fpath mailpath path
 #
 # Less
 #
-
 # Set the default Less options.
 # Mouse-wheel scrolling has been disabled by -X (disable screen clearing).
 # Remove -X and -F (exit if the content fits on one screen) to enable it.
@@ -54,9 +53,7 @@ fi
 
 
 
-
-
-########## KevCaz's setup  ##########
+################# KevCaz's SETUP  #####################
 
 ### Welcome
 # Set the list of directories that Zsh searches for programs.
@@ -163,6 +160,14 @@ alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=
 alias hukev='cd ~/Github/Websites/kevcaz.github.io; firefox http://localhost:1313/; hugo server'
 # launch inSileco local website
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-init-file -e "blogdown::serve_site()"'
+#
+newnotes() {
+  cd ~/Github/Websites/kevcaz.github.io
+  for a in "$@" # Loop over arguments
+  do
+    hugo new notes/$a
+  done
+}
 
 # Backup
 alias backupdc='rsync -av ~/Documents /media/kevcaz/KF/backup'

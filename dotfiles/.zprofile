@@ -149,9 +149,10 @@ alias julia='~/Github/Applications/julia/julia'
 # open sage
 alias sage='~/Github/Applications/sage/sage'
 
-# R
+
 ## update debian packages
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
+
 ## update R packages
 alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
 
@@ -159,7 +160,7 @@ alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=
 # launch my website
 alias hukev='cd ~/Github/Websites/kevcaz.github.io; firefox http://localhost:1313/; hugo server'
 # launch inSileco local website
-alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-init-file -e "blogdown::serve_site()"'
+alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-site-file -e "blogdown::serve_site()"'
 #
 newnotes() {
   cd ~/Github/Websites/kevcaz.github.io
@@ -191,6 +192,11 @@ mygit() {
   git add -A;
   git commit -m "$1";
   git push;
+}
+
+# to outBix
+outbox() {
+  mv $@ ~/Dropbox/outBox/
 }
 
 # Get a DOI using crossref https://stackoverflow.com/questions/9354847/concatenate-inputs-in-bash-script

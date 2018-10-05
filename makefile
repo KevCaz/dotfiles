@@ -1,13 +1,7 @@
-cur = $(shell pwd)
+cur=$(shell pwd)
 
 clone:
-	cp ~/.gitconfig $(cur)/dotfiles/
-	cp ~/.zprofile $(cur)/dotfiles/
-	cp ~/.zprofile $(cur)/dotfiles/
-	cp ~/.zpreztorc $(cur)/dotfiles/
-	cp ~/.zlog* $(cur)/dotfiles/
-	cp ~/.Rprofile $(cur)/dotfiles/
-	cp ~/.welcome $(cur)/dotfiles/
+	sh todot.sh /
 	cp /etc/apt/sources.list $(cur)/config/
 	cp -r /etc/apt/sources.list.d/ $(cur)/config/
 	cp ~/.atom/*.cson $(cur)/config/

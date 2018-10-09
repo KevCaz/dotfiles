@@ -155,6 +155,9 @@ alias updeb='sudo apt-get update && sudo apt-get upgrade'
 
 ## update R packages
 alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
+## edit Renviron.site
+alias renvi='sudo nano /usr/lib/R/etc/Renviron.site'
+
 
 # Website
 # launch my website

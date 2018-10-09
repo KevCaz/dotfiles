@@ -7,8 +7,8 @@ set.seed(7891)
 
 ##-- options (explicit enough)
 options(
-  prompt = crayon::blue("R> "),
-  continue = crayon::yellow("+... "),
+  prompt = "R> ",
+  continue = "+... ",
   width = 140,
   max.print = 2000,
   repos = "https://cran.wu.ac.at/",

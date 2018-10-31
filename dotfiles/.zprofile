@@ -137,8 +137,9 @@ alias pwo='sudo poweroff'
 alias pwr='sudo reboot'
 
 
-# change backlight
-alias mybl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
+# change screen and keyboard backlight
+alias mysbl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
+alias mykbl='sudo tee /sys/class/leds/tpacpi::kbd_backlight/brightness <<<'
 
 # open tor
 alias tor='cd ~/Tor; ./start-tor-browser.desktop'

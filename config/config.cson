@@ -18,18 +18,30 @@
     version: "4.7.0"
   "autocomplete-plus": {}
   core:
+    customFileTypes:
+      "source.ini": [
+        ".hgrc"
+        ".buckconfig"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "ink"
       "language-hugo"
       "linter"
       "language-markdown"
       "language-r"
-      "ide-r"
-      "atom-ide-ui"
       "linter-lintr"
-      "markdown-preview-enhanced"
       "markdown-to-html"
       "random"
+      "git-diff"
+      "atom-ide-ui"
+      "ide-r"
+      "markdown-preview-enhanced"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -38,11 +50,12 @@
     ]
     warnOnLargeFileLimit: 1
   editor:
-    fontFamily: "Roboto Mono for powerline"
-    fontSize: 18
+    fontFamily: "Roboto Mono for Powerline"
+    fontSize: 22
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
+  "file-icons": {}
   "julia-client":
     firstBoot: false
   linter:
@@ -99,6 +112,13 @@
     leftEditorColor: "red"
     rightEditorColor: "green"
     scrollSyncType: "Vertical + Horizontal"
+  term3:
+    colors:
+      background: "#1d1d1d"
+      brightBlack: "#6c6c6c"
+      normalBlack: "#1d1d1d"
+      normalGreen: "#2d6546"
+      normalRed: "#ae5c68"
   "tree-view": {}
   welcome:
     showOnStartup: false

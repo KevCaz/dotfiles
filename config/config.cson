@@ -45,13 +45,13 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "atom-material-ui"
+      "nord-atom-ui"
       "atom-material-syntax"
     ]
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Roboto Mono for Powerline"
-    fontSize: 22
+    fontSize: 23
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -63,7 +63,8 @@
       "lintr"
       "cpplint"
     ]
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 280
   minimap:
     adjustAbsoluteModeHeight: true
   "platformio-ide-terminal":

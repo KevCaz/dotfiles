@@ -1,9 +1,8 @@
-# I cannot get no credit for this....
+# I cannot get credit for this....
 # Executes commands at login pre-zshrc.
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
 #
 # Browser
 #
@@ -162,7 +161,7 @@ alias renvi='sudo nano /usr/lib/R/etc/Renviron.site'
 
 # Website
 # launch my website
-alias hukev='cd ~/Github/Websites/kevcaz.github.io; firefox http://localhost:1313/; hugo server'
+alias hukev='cd ~/Github/Websites/kevcaz.github.io; hugo server &; firefox http://localhost:1313/; fg;'
 # launch inSileco local website
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-site-file -e "blogdown::serve_site()"'
 #
@@ -175,10 +174,10 @@ newnotes() {
 }
 
 # Backup
-alias backupdc='rsync -av ~/Documents /media/kevcaz/KF/backup'
-alias backupzo='rsync -av ~/Zotero /media/kevcaz/KF/backup'
-alias backupgh='rsync -av ~/Github /media/kevcaz/KF/backup'
-alias backupca='rsync -av ~/Calibre /media/kevcaz/KF/backup'
+alias backupdc='rsync -av ~/Documents /media/kevcaz/KL/backup'
+alias backupzo='rsync -av ~/Zotero /media/kevcaz/KL/backup'
+alias backupgh='rsync -av ~/Github /media/kevcaz/KL/backup'
+alias backupca='rsync -av ~/Calibre /media/kevcaz/KL/backup'
 alias backall='backupdc; backupzo; backupgh; backupca'
 
 

@@ -11,7 +11,7 @@ options(
   continue = "+... ",
   width = 140,
   max.print = 2000,
-  repos = "https://cran.wu.ac.at/",
+  # repos = "https://cran.wu.ac.at/",
   stringsAsFactors = FALSE
 )
 ##-- X11 options

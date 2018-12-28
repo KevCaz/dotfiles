@@ -81,10 +81,6 @@ alias ls='ls -a'
 
 # todolist
 alias todo='atom -a ~/Dropbox/_drafts/todo.md'
-# reading list
-alias toread='nano ~/.toread'
-# watching list
-alias towatch='nano ~/.towatch'
 
 # Remoote access to my MacOS machine
 alias tomac='ssh KevCaz@10.0.1.8'
@@ -121,6 +117,7 @@ alias seapkgi='apt-get list --installed | grep'
 # Go to Github directories
 alias gh='cd ~/Github'
 alias gha='cd ~/Github/Applications'
+alias ghb='cd ~/Github/Books'
 alias ghg='cd ~/Github/Gists'
 alias gho='cd ~/Github/Others'
 alias ghr='cd ~/Github/Rpackages'
@@ -185,6 +182,14 @@ alias backall='backupdc; backupzo; backupgh; backupca'
 
 ######################### FUNCTIONS
 
+# Install an R package
+rinstall() {
+  for pkg in "$@"
+  do
+    Rscript -e "install.packages('$pkg')"
+  done
+}
+
 # Search new package
 findpkg() {
   apt-cache search $1 | grep $1
@@ -197,7 +202,7 @@ mygit() {
   git push;
 }
 
-# to outBix
+# to outBox
 outbox() {
   mv $@ ~/Dropbox/outBox/
 }

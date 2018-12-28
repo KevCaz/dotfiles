@@ -45,13 +45,13 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "nord-atom-ui"
-      "atom-material-syntax"
+      "framer-ui"
+      "framer-syntax"
     ]
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Roboto Mono for Powerline"
-    fontSize: 23
+    fontSize: 21
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"

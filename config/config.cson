@@ -45,8 +45,8 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "framer-ui"
-      "framer-syntax"
+      "atom-material-ui"
+      "atom-material-syntax"
     ]
     warnOnLargeFileLimit: 1
   editor:

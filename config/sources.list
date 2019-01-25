@@ -17,3 +17,5 @@ deb http://ppa.launchpad.net/papirus/papirus/ubuntu xenial main
 deb-src http://ppa.launchpad.net/papirus/papirus/ubuntu xenial main
 
 
+deb [arch=amd64] https://download.docker.com/linux/debian buster stable
+# deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable

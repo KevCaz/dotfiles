@@ -5,28 +5,23 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 # Browser
-#
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
 fi
 
-#
 # Editors
-#
 export EDITOR='nano'
 export VISUAL='nano'
 export PAGER='less'
 
-#
+
 # Language
-#
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
 fi
 
-#
+
 # Paths
-#
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
 
@@ -36,9 +31,7 @@ typeset -gU cdpath fpath mailpath path
 # )
 
 
-#
 # Less
-#
 # Set the default Less options.
 # Mouse-wheel scrolling has been disabled by -X (disable screen clearing).
 # Remove -X and -F (exit if the content fits on one screen) to enable it.
@@ -52,7 +45,9 @@ fi
 
 
 
-################# KevCaz's SETUP  #####################
+########
+############### KevCaz's SETUP
+########
 
 ### Welcome
 # Set the list of directories that Zsh searches for programs.
@@ -65,10 +60,10 @@ path=(
 source ~/.welcome
 
 
-######################### ALIAS
+############### ALIAS
 
-# atom add current
-alias atad='atom -a .'
+# edit zprofile
+alias zedit="atom -a ~/.zprofile"
 
 # dropbox
 alias dbox='~/.dropbox-dist/dropboxd &'
@@ -103,10 +98,11 @@ getfrommam() {
   scp -rp kevcaz@dgravel-mp2.ccs.usherbrooke.ca:$1 $2
 }
 
-# Find processus
-alias psgrep='ps aux | grep'
+
 
 # Searches
+# Find processus
+alias psgrep='ps aux | grep'
 ## Search in Zotero database
 alias seazot='grep -rnw ~/Zotero/storage/ -e'
 ## Search in all docs
@@ -125,18 +121,15 @@ alias ghs='cd ~/Github/Studies'
 alias ght='cd ~/Github/Tutorials'
 alias ghw='cd ~/Github/Websites'
 
-# open a file
-alias pop='xdg-open'
 
-# power off and reboot
-alias pwo='sudo poweroff'
-alias pwr='sudo reboot'
 
 
 # change screen and keyboard backlight
 alias mysbl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
 alias mykbl='sudo tee /sys/class/leds/tpacpi::kbd_backlight/brightness <<<'
 
+# open a file
+alias pop='xdg-open'
 # open tor
 alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 
@@ -146,22 +139,25 @@ alias julia='~/Github/Applications/julia/julia'
 # open sage
 alias sage='~/Github/Applications/sage/sage'
 
-
 ## update debian packages
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
 
-## update R packages
-alias udrpkgs='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
+
+# R alias
+# in order to use lillteR
+alias r=/usr/bin/r
 ## edit Renviron.site
 alias renvi='sudo nano /usr/lib/R/etc/Renviron.site'
+alias rprof='atom ~/.Rprofile'
+## update R packages
+alias rupdate='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
 
-
-# Website
-# launch my website
+# Websites
+## launch my website
 alias hukev='cd ~/Github/Websites/kevcaz.github.io; hugo server &; firefox http://localhost:1313/; fg;'
-# launch inSileco local website
+## launch inSileco local website
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-site-file -e "blogdown::serve_site()"'
-#
+## add a new note on my website
 newnotes() {
   cd ~/Github/Websites/kevcaz.github.io
   for a in "$@" # Loop over arguments
@@ -174,8 +170,9 @@ newnotes() {
 alias backupdc='rsync -av ~/Documents /media/kevcaz/KL/backup'
 alias backupzo='rsync -av ~/Zotero /media/kevcaz/KL/backup'
 alias backupgh='rsync -av ~/Github /media/kevcaz/KL/backup'
-alias backupca='rsync -av ~/Calibre /media/kevcaz/KL/backup'
-alias backall='backupdc; backupzo; backupgh; backupca'
+alias backupgh='rsync -av ~/Github /media/kevcaz/KL/backup'
+alias backuppi='rsync -av ~/Pictures /media/kevcaz/KL/backup'
+alias backall='backupdc; backupzo; backupgh; backupca; backuppi'
 
 
 

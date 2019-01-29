@@ -30,7 +30,6 @@
         "BUCK"
       ]
     disabledPackages: [
-      "ink"
       "language-hugo"
       "linter"
       "language-markdown"
@@ -51,20 +50,21 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Roboto Mono for Powerline"
-    fontSize: 21
+    fontSize: 20
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
   "file-icons": {}
   "julia-client":
+    consoleOptions: {}
     firstBoot: false
+    juliaPath: "/home/kevcaz/Github/Applications/julia/usr/bin/julia"
   linter:
     disabledProviders: [
       "lintr"
       "cpplint"
     ]
-  "linter-ui-default":
-    panelHeight: 280
+  "linter-ui-default": {}
   minimap:
     adjustAbsoluteModeHeight: true
   "platformio-ide-terminal":

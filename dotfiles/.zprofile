@@ -54,6 +54,8 @@ fi
 path=(
   /usr/local/{bin,sbin}
   /home/kevcaz/.local/{bin,sbin}
+  /home/kevcaz/R/r
+  /home/kevcaz/Github/Applications/julia/usr/bin
   $path
 )
 # welcome
@@ -63,7 +65,7 @@ source ~/.welcome
 ############### ALIAS
 
 # edit zprofile
-alias zedit="atom -a ~/.zprofile"
+alias zedit="atom ~/.zprofile"
 
 # dropbox
 alias dbox='~/.dropbox-dist/dropboxd &'
@@ -132,9 +134,6 @@ alias mykbl='sudo tee /sys/class/leds/tpacpi::kbd_backlight/brightness <<<'
 alias pop='xdg-open'
 # open tor
 alias tor='cd ~/Tor; ./start-tor-browser.desktop'
-
-# open Julia
-alias julia='~/Github/Applications/julia/julia'
 
 # open sage
 alias sage='~/Github/Applications/sage/sage'
@@ -250,6 +249,11 @@ rmdto() {
 ## Convert a file to pdf using pandoc
 topdf() {
   pandoc $1 -o ${1%.*}.pdf;
+}
+
+## Convert xlsx or xls to csv files (one per sheet)
+tocsv() {
+  ssconvert -S $1 %s.csv;
 }
 
 ## Change extensions

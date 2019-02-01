@@ -22,6 +22,7 @@ grDevices::X11.options(width=10, height=10)
 
 ##-- few useful functions
 reset <- function() system('reset')
+sqBloc <- function(i, sz) (i-1)*sz + seq_len(sz)
 
 ## Function triggered when starting a new session
 ## No need for .first() function

@@ -50,7 +50,7 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Roboto Mono for Powerline"
-    fontSize: 20
+    fontSize: 19
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
@@ -102,6 +102,7 @@
       "text.md"
       "text.Rmd"
       "text.tex.latex"
+      "source.r"
     ]
     locales: [
       "en-US"

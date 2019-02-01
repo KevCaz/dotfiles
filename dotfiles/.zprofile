@@ -123,7 +123,9 @@ alias ghs='cd ~/Github/Studies'
 alias ght='cd ~/Github/Tutorials'
 alias ghw='cd ~/Github/Websites'
 
-
+# Go to
+alias gorev='cd ~/Documents/Reviews'
+alias gopci='cd ~/Documents/Reviews/PCI'
 
 
 # change screen and keyboard backlight

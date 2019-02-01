@@ -24,3 +24,14 @@
   'Fontawesome':
     'prefix': 'fa'
     'body': '<i class="fa fa-$1" aria-hidden="true"></i>$2'
+
+'.source.r':
+  'function':
+    'prefix': 'fun'
+    'body': '$1 <- function($2) {}'
+  'dataframe':
+    'prefix': 'dat'
+    'body': 'data.frame($1)'
+  'plot':
+    'prefix': 'plot'
+    'body': 'plot($1, $2, xlab = "", ylab = "", pch = 1, las = 1)'

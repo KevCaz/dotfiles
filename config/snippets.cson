@@ -24,14 +24,31 @@
   'Fontawesome':
     'prefix': 'fa'
     'body': '<i class="fa fa-$1" aria-hidden="true"></i>$2'
+  'CRAN':
+    'prefix': 'cran'
+    'body': 'https://cran.r-project.org/web/packages/$1/index.html'
+  'Shortcode':
+    'prefix': 'shtcod'
+    'body': '{{< name$1 arg >}}'
+  'ImageCenter':
+    'prefix': 'imgc'
+    'body': '{{< imgcenter path$1 $2 >}}'
+
+
 
 '.source.r':
   'function':
     'prefix': 'fun'
-    'body': '$1 <- function($2) {}'
+    'body': '$1 <- function($2) {\n x$3 \n}'
   'dataframe':
     'prefix': 'dat'
     'body': 'data.frame($1)'
   'plot':
     'prefix': 'plot'
     'body': 'plot($1, $2, xlab = "", ylab = "", pch = 1, las = 1)'
+  'save_png':
+    'prefix': 'png'
+    'body': 'png($1, width = 7, height = 7, units = "in", res = 300)\ndev.off()'
+  'pch_demo':
+    'prefix': 'pch'
+    'body': 'plot(1:25, pch = 1:25); text(1:25, 1:25, labels = 1:25, pos = 3)'

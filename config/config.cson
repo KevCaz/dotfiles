@@ -39,7 +39,6 @@
       "random"
       "git-diff"
       "atom-ide-ui"
-      "ide-r"
       "markdown-preview-enhanced"
     ]
     telemetryConsent: "limited"
@@ -50,7 +49,7 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Roboto Mono for Powerline"
-    fontSize: 19
+    fontSize: 20
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"

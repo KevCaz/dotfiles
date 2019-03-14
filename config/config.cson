@@ -14,8 +14,38 @@
     ]
   "autocomplete-emojis":
     enableUnicodeEmojis: false
-  "autocomplete-font-awesome":
-    version: "4.7.0"
+  "autocomplete-paths":
+    scopes: [
+      {
+        includeCurrentDirectory: true
+        prefixes: [
+          "require\\(['\"]"
+          "read[^ ]*\\(['\"]"
+          "load\\(['\"]"
+          "\\]\\(['\"]"
+        ]
+        projectRelativePath: false
+        relative: true
+        scopes: [
+          "source.r"
+        ]
+      }
+      {
+        includeCurrentDirectory: true
+        prefixes: [
+          "src=['\"]"
+          "href=['\"]"
+          "\\]\\(['\"]"
+        ]
+        projectRelativePath: false
+        relative: true
+        scopes: [
+          "text.html.basic"
+          "source.gfm"
+          "source.r"
+        ]
+      }
+    ]
   "autocomplete-plus": {}
   core:
     customFileTypes:
@@ -31,10 +61,7 @@
       ]
     disabledPackages: [
       "language-hugo"
-      "linter"
       "language-markdown"
-      "language-r"
-      "linter-lintr"
       "markdown-to-html"
       "random"
       "git-diff"
@@ -49,7 +76,7 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Roboto Mono for Powerline"
-    fontSize: 20
+    fontSize: 17
     softWrap: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"

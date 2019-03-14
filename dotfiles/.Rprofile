@@ -1,6 +1,4 @@
 #### KevCaz's .Rprofile
-## To refresh => remove the .RData file otherwise .First is found in there
-## or use R --no-restore
 
 ##-- Set the RNG
 set.seed(7891)

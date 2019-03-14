@@ -145,7 +145,8 @@ alias updeb='sudo apt-get update && sudo apt-get upgrade'
 
 
 # R alias
-# in order to use lillteR
+# in order to use little, we need to re-assign r otherwise with zsh it keeps
+# repeating the last command.
 alias r=/usr/bin/r
 ## edit Renviron.site
 alias renvi='sudo nano /usr/lib/R/etc/Renviron.site'

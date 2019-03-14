@@ -1,21 +1,20 @@
-# Testing 
-deb http://debian.mirror.rafal.ca/debian testing main contrib non-free
-deb-src http://debian.mirror.rafal.ca/debian testing main contrib non-free
-# Stable
-deb http://ftp.debian.org/debian stable main contrib non-free
-deb-src http://ftp.debian.org/debian stable main contrib non-free
-# Security updates
-deb http://security.debian.org/ stable/updates main contrib non-free
-deb http://security.debian.org/ testing/updates main contrib non-free
-deb-src http://security.debian.org/ stable/updates main contrib non-free
-deb-src http://security.debian.org/ testing/updates main contrib non-free
-# Tor 
-deb http://deb.torproject.org/torproject.org testing main
-deb-src http://deb.torproject.org/torproject.org testing main
-# Papirus' icons 
-deb http://ppa.launchpad.net/papirus/papirus/ubuntu xenial main
-deb-src http://ppa.launchpad.net/papirus/papirus/ubuntu xenial main
+# 
+deb http://debian.mirror.rafal.ca/debian/ buster main contrib non-free
+deb-src http://debian.mirror.rafal.ca/debian/ buster main contrib non-free
+
+#
+deb http://security.debian.org/debian-security buster/updates main
+deb-src http://security.debian.org/debian-security buster/updates main
+
+#
 
 
+# This system was installed using small removable media
+# (e.g. netinst, live or single CD). The matching "deb cdrom"
+# entries were disabled at the end of the installation process.
+# For information about how to configure apt package sources,
+# see the sources.list(5) manual.
 deb [arch=amd64] https://download.docker.com/linux/debian buster stable
+# deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable
+# deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable
 # deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable

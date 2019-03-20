@@ -150,7 +150,7 @@ alias updeb='sudo apt-get update && sudo apt-get upgrade'
 alias r=/usr/bin/r
 ## edit Renviron.site
 alias renvi='sudo nano /usr/lib/R/etc/Renviron.site'
-alias rprof='atom ~/.Rprofile'
+alias redit='atom ~/.Rprofile'
 alias rhome="cd /usr/lib/R"
 ## update R packages
 alias rupdate='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'

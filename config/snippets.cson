@@ -49,6 +49,3 @@
   'save_png':
     'prefix': 'png'
     'body': 'png($1, width = 7, height = 7, units = "in", res = 300)\ndev.off()'
-  'pch_demo':
-    'prefix': 'pch'
-    'body': 'plot(1:25, pch = 1:25); text(1:25, 1:25, labels = 1:25, pos = 3)'

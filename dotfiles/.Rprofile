@@ -21,6 +21,26 @@ grDevices::X11.options(width=10, height=10)
 ##-- few useful functions
 reset <- function() system('reset')
 sqBloc <- function(i, sz) (i-1)*sz + seq_len(sz)
+pch_demo <- function(n = 25) {
+  sq <- 1:n
+  plot(sq, pch = sq)
+  text(sq, sq, labels = sq, pos = 3)
+}
+myRpkg <- function() {
+  lapply(
+    list(
+      "devtools",
+      "graphicsutils",
+      "inSilecoMisc",
+      "rmarkdown",
+      "testthat",
+      "tidyverse"
+      ),
+    require, character.only = TRUE)
+  cat("\n", crayon::green("packages loaded\n"))
+  invisible(NULL)
+}
+
 
 ## Function triggered when starting a new session
 ## No need for .first() function

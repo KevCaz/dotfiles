@@ -20,17 +20,20 @@
     ]
   "autocomplete-emojis":
     enableUnicodeEmojis: false
+  "autocomplete-font-awesome":
+    version: "4.7.0"
   "autocomplete-paths":
     scopes: [
       {
         includeCurrentDirectory: true
         prefixes: [
+          "source\\(['\"]"
           "require\\(['\"]"
           "read[^ ]*\\(['\"]"
-          "load\\(['\"]"
+          "load[^ ]*\\(['\"]"
           "\\]\\(['\"]"
         ]
-        projectRelativePath: false
+        projectRelativePath: true
         relative: true
         scopes: [
           "source.r"
@@ -70,12 +73,9 @@
       "language-markdown"
       "markdown-to-html"
       "random"
-      "git-diff"
       "atom-ide-ui"
       "markdown-preview-enhanced"
-      "linter-lintr"
       "linter"
-      "linter-ui-default"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -85,8 +85,9 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Roboto Mono for Powerline"
-    fontSize: 15
+    fontSize: 19
     softWrap: true
+    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
   "file-icons": {}
@@ -126,6 +127,9 @@
       theme: "solarized-dark"
       toggles:
         selectToCopy: false
+  "scroll-through-time":
+    direction: "down"
+    modifierKey: "altKey"
   "spell-check":
     addKnownWords: true
     grammars: [

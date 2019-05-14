@@ -45,16 +45,16 @@ myRpkg <- function() {
 ## Function triggered when starting a new session
 ## No need for .first() function
 ## See https://github.com/eddelbuettel/littler/issues/24
-local({
-  cat("\n", crayon::green(">> KevCaz"), " -",
-  crayon::yellow(format(Sys.time(), '%d/%m/%y %Hh%Mmin%Ssec')), "\n\n") ;
-})
+# local({
+#   cat("\n", crayon::green(">> KevCaz"), " -",
+#   crayon::yellow(format(Sys.time(), '%d/%m/%y %Hh%Mmin%Ssec')), "\n\n") ;
+# })
 
 
 ##-- function triggered when exiting a new session
-.Last <- function(){
-    graphics.off()
-    cat("\n ",
-    crayon::yellow(format(Sys.time(), '%d/%m/%y %Hh%Mmin%Ssec')),
-    crayon::red("Até mais! <<"), "\n")
-}
+# .Last <- function(){
+#     graphics.off()
+#     cat("\n ",
+#     crayon::yellow(format(Sys.time(), '%d/%m/%y %Hh%Mmin%Ssec')),
+#     crayon::red("Até mais! <<"), "\n")
+# }

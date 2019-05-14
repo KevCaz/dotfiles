@@ -64,6 +64,9 @@ source ~/.welcome
 
 ############### ALIAS
 
+# New windows of file manager here
+alias nw="nautilus -w .&"
+
 # edit zprofile
 alias zedit="atom ~/.zprofile"
 
@@ -88,7 +91,6 @@ getfrommac() {
   scp -rp KevCaz@10.0.1.8:$1 $2
 }
 
-
 # Get access to Mp2
 alias tomam='ssh kevcaz@dgravel-mp2.ccs.usherbrooke.ca'
 # Send something to Mp2
@@ -99,6 +101,7 @@ sendtomam() {
 getfrommam() {
   scp -rp kevcaz@dgravel-mp2.ccs.usherbrooke.ca:$1 $2
 }
+
 
 
 
@@ -122,6 +125,7 @@ alias ghr='cd ~/Github/Rpackages'
 alias ghs='cd ~/Github/Studies'
 alias ght='cd ~/Github/Tutorials'
 alias ghw='cd ~/Github/Websites'
+alias ghm='cd ~/Github/mccannlab'
 
 # Go to
 alias gorev='cd ~/Documents/Reviews'
@@ -142,7 +146,8 @@ alias sage='~/Github/Applications/sage/sage'
 
 ## update debian packages
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
-
+## update atom
+alias atomup='aria2c https://atom.io/download/deb && sudo dpkg -i atom-amd64.deb && rm atom-amd64.deb'
 
 # R alias
 # in order to use little, we need to re-assign r otherwise with zsh it keeps
@@ -157,7 +162,7 @@ alias rupdate='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=
 
 # Websites
 ## launch my website
-alias hukev='cd ~/Github/Websites/kevcaz.github.io; hugo server &; firefox http://localhost:1313/; fg;'
+alias hukev='ghw && cd KevCaz.github.io && hugo server &; firefox http://localhost:1313/; fg;'
 ## launch inSileco local website
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-site-file -e "blogdown::serve_site()"'
 ## add a new note on my website
@@ -169,18 +174,20 @@ newnotes() {
   done
 }
 
-# Backup
-alias backupdc='rsync -av ~/Documents /media/kevcaz/KL/backup'
-alias backupzo='rsync -av ~/Zotero /media/kevcaz/KL/backup'
-alias backupgh='rsync -av ~/Github /media/kevcaz/KL/backup'
-alias backupgh='rsync -av ~/Github /media/kevcaz/KL/backup'
-alias backuppi='rsync -av ~/Pictures /media/kevcaz/KL/backup'
-alias backall='backupdc; backupzo; backupgh; backupca; backuppi'
-
-
 
 
 ######################### FUNCTIONS
+
+# Meteo
+meteo() {
+  curl wttr.in/$1
+}
+
+# Copy Paste
+toterm() {
+  xclip -o
+}
+
 
 # Install an R package
 rinstall() {
@@ -252,7 +259,7 @@ rmdto() {
 
 ## Convert a file to pdf using pandoc
 topdf() {
-  pandoc $1 -o ${1%.*}.pdf;
+  pandoc $1 -o ${1%.*}.pdf -N --bibliography=/home/kevcaz/Dropbox/kevcaz.bib --pdf-engine=pdflatex
 }
 
 ## Convert xlsx or xls to csv files (one per sheet)

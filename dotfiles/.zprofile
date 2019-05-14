@@ -259,8 +259,14 @@ rmdto() {
 
 ## Convert a file to pdf using pandoc
 topdf() {
-  pandoc $1 -o ${1%.*}.pdf -N --bibliography=/home/kevcaz/Dropbox/kevcaz.bib --pdf-engine=pdflatex
+  pandoc $1 -o ${1%.*}.pdf --bibliography=/home/kevcaz/Dropbox/kevcaz.bib --pdf-engine=pdflatex
 }
+
+## Convert a file to pdf using pandoc
+todocx() {
+  pandoc $1 -o ${1%.*}.docx --bibliography=/home/kevcaz/Dropbox/kevcaz.bib
+}
+
 
 ## Convert xlsx or xls to csv files (one per sheet)
 tocsv() {

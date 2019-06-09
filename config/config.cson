@@ -84,8 +84,12 @@
     ]
     warnOnLargeFileLimit: 1
   editor:
-    fontFamily: "Roboto Mono for Powerline"
-    fontSize: 19
+    fontFamily: "Fira Code"
+    fontSize: 16
+    invisibles: {}
+    lineHeight: 1.4
+    showIndentGuide: true
+    showInvisibles: true
     softWrap: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":

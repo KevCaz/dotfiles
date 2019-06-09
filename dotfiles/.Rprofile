@@ -7,7 +7,7 @@ set.seed(7891)
 options(
   prompt = "R> ",
   continue = "+... ",
-  width = 140,
+  width = 100,
   max.print = 2000,
   # repos = "https://cran.wu.ac.at/",
   stringsAsFactors = FALSE
@@ -20,7 +20,11 @@ grDevices::X11.options(width=10, height=10)
 
 ##-- few useful functions
 reset <- function() system('reset')
+clear <- function() system('clear')
+getCit <- function(x)
+  cat(toBibtex(citation(x)), file = paste0(x, '.bib'), sep = "\n")
 sqBloc <- function(i, sz) (i-1)*sz + seq_len(sz)
+notCran <- function(not_cran) Sys.setenv(NOT_CRAN = not_cran)
 pch_demo <- function(n = 25) {
   sq <- 1:n
   plot(sq, pch = sq)
@@ -49,7 +53,6 @@ myRpkg <- function() {
 #   cat("\n", crayon::green(">> KevCaz"), " -",
 #   crayon::yellow(format(Sys.time(), '%d/%m/%y %Hh%Mmin%Ssec')), "\n\n") ;
 # })
-
 
 ##-- function triggered when exiting a new session
 # .Last <- function(){

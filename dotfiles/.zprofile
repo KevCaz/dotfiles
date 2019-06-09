@@ -183,11 +183,6 @@ meteo() {
   curl wttr.in/$1
 }
 
-# Copy Paste
-toterm() {
-  xclip -o
-}
-
 
 # Install an R package
 rinstall() {

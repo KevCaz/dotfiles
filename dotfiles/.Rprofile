@@ -7,10 +7,10 @@ set.seed(7891)
 options(
   prompt = "R> ",
   continue = "+... ",
-  width = 100,
-  max.print = 2000,
+  width = 80,
+  max.print = 2400
   # repos = "https://cran.wu.ac.at/",
-  stringsAsFactors = FALSE
+  # stringsAsFactors = FALSE
 )
 ##-- X11 options
 grDevices::X11.options(width=10, height=10)

@@ -85,7 +85,7 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
-    fontSize: 16
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.4
     showIndentGuide: true
@@ -146,6 +146,7 @@
       "text.md"
       "text.Rmd"
       "text.tex.latex"
+      "source.r"
     ]
     locales: [
       "en-US"

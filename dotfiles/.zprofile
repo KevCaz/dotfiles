@@ -54,7 +54,7 @@ fi
 path=(
   /usr/local/{bin,sbin}
   /home/kevcaz/.local/{bin,sbin}
-  /home/kevcaz/R/r
+  /home/kevcaz/.kevcaz/r
   /home/kevcaz/Github/Applications/julia/usr/bin
   $path
 )
@@ -127,6 +127,9 @@ alias ght='cd ~/Github/Tutorials'
 alias ghw='cd ~/Github/Websites'
 alias ghm='cd ~/Github/mccannlab'
 
+## Use bfg  https://rtyley.github.io/bfg-repo-cleaner/
+alias bfg='java -jar ~/.local/lib/java/bfg-1.13.0.jar'
+
 # Go to
 alias gorev='cd ~/Documents/Reviews'
 alias gopci='cd ~/Documents/Reviews/PCI'
@@ -152,13 +155,13 @@ alias atomup='aria2c https://atom.io/download/deb && sudo dpkg -i atom-amd64.deb
 # R alias
 # in order to use little, we need to re-assign r otherwise with zsh it keeps
 # repeating the last command.
+alias R=radian
 alias r=/usr/bin/r
 ## edit Renviron.site
 alias renvi='sudo nano /usr/lib/R/etc/Renviron.site'
 alias redit='atom ~/.Rprofile'
-alias rhome="cd /usr/lib/R"
-## update R packages
-alias rupdate='sudo Rscript --no-init-file -e "update.packages(ask=FALSE, repos=\"https://cran.wu.ac.at/\")"'
+alias rhome='cd /usr/lib/R'
+alias rupdate='update.r -l /usr/local/lib/R/site-library'
 
 # Websites
 ## launch my website

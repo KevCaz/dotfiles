@@ -177,6 +177,9 @@ newnotes() {
   done
 }
 
+## Julia 
+
+alias judit='atom ~/.julia/config/startup.jl'
 
 
 ######################### FUNCTIONS

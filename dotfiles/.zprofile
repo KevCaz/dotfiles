@@ -82,6 +82,9 @@ alias ls='ls -a'
 # todolist
 alias todo='atom -a ~/Dropbox/_drafts/todo.md'
 
+# tp Raspberry Pi
+alias torasp="ssh pi@131.104.150.179"
+
 # Remoote access to my MacOS machine
 alias tomac='ssh KevCaz@10.0.1.8'
 sendtomac() {
@@ -177,7 +180,7 @@ newnotes() {
   done
 }
 
-## Julia 
+## Julia
 
 alias judit='atom ~/.julia/config/startup.jl'
 

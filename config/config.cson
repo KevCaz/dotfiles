@@ -107,6 +107,8 @@
   "linter-ui-default":
     panelHeight: 300
     showPanel: true
+  "metro-ui":
+    themeAccentColor: "#e97a43"
   minimap:
     adjustAbsoluteModeHeight: true
   "platformio-ide-terminal":

@@ -148,7 +148,7 @@ alias pop='xdg-open'
 alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 
 # open sage
-alias sage='~/Github/Applications/sage/sage'
+# alias sage='~/Github/Applications/sage/sage'
 
 ## update debian packages
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
@@ -183,6 +183,11 @@ newnotes() {
 ## Julia
 
 alias judit='atom ~/.julia/config/startup.jl'
+
+
+
+## display my orcid
+alias orcid='echo "0000-0001-6619-9874"'
 
 
 ######################### FUNCTIONS
@@ -246,9 +251,12 @@ getPdf() {
 
 ## New review
 newreview() {
-  cd ~/Documents/Reviews;
-  cp -r emptyreview $1;
-  atom -a $1
+  VAR1=${1:-$RANDOM}
+  NEWR=review_current$VAR1
+  cd ~/Documents/Reviews
+  cp -r emptyreview/ $NEWR
+  echo "Created: "$NEWR
+  atom -a $NEWR
 }
 
 ## Install R packages

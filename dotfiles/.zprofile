@@ -129,6 +129,7 @@ alias ghs='cd ~/Github/Studies'
 alias ght='cd ~/Github/Tutorials'
 alias ghw='cd ~/Github/Websites'
 alias ghm='cd ~/Github/mccannlab'
+alias dotfiles='cd ~/Github/Others/dotfiles'
 
 ## Use bfg  https://rtyley.github.io/bfg-repo-cleaner/
 alias bfg='java -jar ~/.local/lib/java/bfg-1.13.0.jar'
@@ -173,7 +174,7 @@ alias hukev='ghw && cd KevCaz.github.io && hugo server &; firefox http://localho
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-site-file -e "blogdown::serve_site()"'
 ## add a new note on my website
 newnotes() {
-  cd ~/Github/Websites/kevcaz.github.io
+  cd ~/Github/Websites/KevCaz.github.io
   for a in "$@" # Loop over arguments
   do
     hugo new notes/$a

@@ -38,12 +38,25 @@ myRpkg <- function() {
       "inSilecoMisc",
       "rmarkdown",
       "testthat",
-      "tidyverse"
+      "tidyverse",
+      "usethis"
       ),
     require, character.only = TRUE)
   cat("\n", crayon::green("packages loaded\n"))
   invisible(NULL)
 }
+# convert units
+conv <- function(x, from = "fahrenheit", to = "celsius") {
+  units::as_units(0, to) +
+  units::as_units(as.numeric(x), from)
+}
+# get my pubs
+mypubs <- function(orcid = "0000-0001-6619-9874", filename = "pubs.bib") {
+  my_dois <- unique(rorcid::identifiers(rorcid::works(orcid)))
+  pubs <- rcrossref::cr_cn(dois = my_dois, format = "bibtex")
+  invisible(lapply(pubs, write, filename, append=TRUE))
+}
+
 
 
 ## Function triggered when starting a new session

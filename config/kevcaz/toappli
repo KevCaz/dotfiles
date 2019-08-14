@@ -1,0 +1,25 @@
+#!/bin/bash
+
+APPLI=$1
+
+# Current selection to clip board
+xclip -o -selection primary | xclip -i -selection clipboard
+
+# Sleep to let me have all my keys are up
+# see https://stackoverflow.com/questions/34092604
+sleep .15
+
+# Find the last gnome terminal windows opened
+w=$(xdotool search --class $APPLI | tail -1)
+
+# test if a terminal is actually opened otherwise opens one
+if ! [[ $w =~ [0-9]+ ]]; then
+  $APPLI
+  w=$(xdotool search --class $APPLI | tail -1)
+fi
+
+# focus on the right window
+xdotool windowfocus $w
+# paste the command (ctrl+shift+v) and execute it (Return)
+xdotool key --clearmodifiers ctrl+shift+v Return
+sleep .15

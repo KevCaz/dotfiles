@@ -5,6 +5,7 @@ clone:
 	cp ~/.atom/*.cson config/
 	cp ~/.atom/*.coffee config/
 	cp ~/.julia/config/* config/julia/
+	cp ~/.kevcaz/to* config/kevcaz/
 	cp ~/Documents/Admin/Signatures/signature.html other/
 
 deploy:

@@ -33,7 +33,9 @@
   'ImageCenter':
     'prefix': 'imgc'
     'body': '{{< imgcenter path$1 $2 >}}'
-
+  'JuliaBloc':
+    'prefix': 'jul'
+    'body': '```julia\n$1\n```'
 
 
 '.source.r':

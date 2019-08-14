@@ -182,10 +182,7 @@ newnotes() {
 }
 
 ## Julia
-
 alias judit='atom ~/.julia/config/startup.jl'
-
-
 
 ## display my orcid
 alias orcid='echo "0000-0001-6619-9874"'
@@ -198,13 +195,18 @@ meteo() {
   curl wttr.in/$1
 }
 
-
 # Install an R package
 rinstall() {
   for pkg in "$@"
   do
     Rscript -e "install.packages('$pkg')"
   done
+}
+
+convR() {
+  FROM=${2:-fahrenheit}
+  TO=${3:-celsius}
+  Rscript -e "conv('$1', '$FROM', '$TO')"
 }
 
 # Search new package
@@ -243,7 +245,7 @@ getDOI() {
 
 # Get a ref from a DOI
 getRef() {
- firefox http://sci-hub.tw$1
+ firefox http://sci-hub.tw/$1
 }
 # Get a pdf from a DOI
 getPdf() {
@@ -279,7 +281,6 @@ topdf() {
 todocx() {
   pandoc $1 -o ${1%.*}.docx --bibliography=/home/kevcaz/Dropbox/kevcaz.bib
 }
-
 
 ## Convert xlsx or xls to csv files (one per sheet)
 tocsv() {

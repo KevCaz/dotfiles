@@ -85,7 +85,7 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
-    fontSize: 16
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.4
     showIndentGuide: true
@@ -169,7 +169,8 @@
       normalBlack: "#1d1d1d"
       normalGreen: "#2d6546"
       normalRed: "#ae5c68"
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   wordcount:

@@ -87,7 +87,7 @@
     fontFamily: "Fira Code"
     fontSize: 15
     invisibles: {}
-    lineHeight: 1.4
+    lineHeight: 1.45
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -105,8 +105,7 @@
       "cpplint"
     ]
   "linter-ui-default":
-    panelHeight: 300
-    showPanel: true
+    panelHeight: 333
   "metro-ui":
     themeAccentColor: "#e97a43"
   minimap:
@@ -151,6 +150,9 @@
       "text.tex.latex"
       "source.r"
     ]
+    knownWords: [
+      "fundamntel"
+    ]
     locales: [
       "en-US"
       "fr-FR"
@@ -169,10 +171,11 @@
       normalBlack: "#1d1d1d"
       normalGreen: "#2d6546"
       normalRed: "#ae5c68"
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
   wordcount:
     alwaysOn: true
 ".md.text":

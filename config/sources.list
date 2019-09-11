@@ -11,8 +11,8 @@ deb http://cran.wu.ac.at/bin/linux/debian buster-cran35/
 
 
 # Qgis
-deb     https://qgis.org/debian unstable main
-deb-src https://qgis.org/debian unstable main
+#deb     https://qgis.org/debian unstable main
+#deb-src https://qgis.org/debian unstable main
 
 
 # This system was installed using small removable media

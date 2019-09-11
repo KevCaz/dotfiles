@@ -1,4 +1,4 @@
-# I cannot get credit for this....
+# I cannot get credit for this! Check prezto out!
 # Executes commands at login pre-zshrc.
 #
 # Authors:
@@ -45,9 +45,10 @@ fi
 
 
 
-########
-############### KevCaz's SETUP
-########
+
+
+###############################################################################
+###################### KevCaz's SETUP
 
 ### Welcome
 # Set the list of directories that Zsh searches for programs.
@@ -80,13 +81,14 @@ alias fire='snap run firefox &'
 alias ls='ls -a'
 
 # todolist
-alias todo='atom -a ~/Dropbox/_drafts/todo.md'
+alias todo='atom -a ~/Github/Others/toutdoux'
 
 # tp Raspberry Pi
 alias torasp="ssh pi@131.104.150.179"
 
 # Remoote access to my MacOS machine
-alias tomac='ssh KevCaz@10.0.1.8'
+# See hostname -i
+alias tomac='ssh kevcaz-mbp@127.0.1.1'
 sendtomac() {
   scp -rp $1 KevCaz@10.0.1.8:${2-./}
 }

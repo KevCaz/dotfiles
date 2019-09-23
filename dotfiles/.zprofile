@@ -96,17 +96,16 @@ getfrommac() {
   scp -rp KevCaz@10.0.1.8:$1 $2
 }
 
-# Get access to Mp2
-alias tomam='ssh kevcaz@dgravel-mp2.ccs.usherbrooke.ca'
+# Get access to Graham
+alias gograham='ssh kevcaz@graham.computecanada.ca'
 # Send something to Mp2
-sendtomam() {
-  scp -rp $1 kevcaz@dgravel-mp2.ccs.usherbrooke.ca:${2-./}
+sendgraham() {
+  scp -rp $1 kevcaz@graham.computecanada.ca:${2-./}
 }
 # Get from Mp2
-getfrommam() {
-  scp -rp kevcaz@dgravel-mp2.ccs.usherbrooke.ca:$1 $2
+getgraham() {
+  scp -rp kevcaz@graham.computecanada.ca:$1 $2
 }
-
 
 
 
@@ -262,6 +261,11 @@ newreview() {
   cp -r emptyreview/ $NEWR
   echo "Created: "$NEWR
   atom -a $NEWR
+}
+
+newdraft() {
+  NEWD=${1:-$RANDOM}
+  atom -a ~/Dropbox/_drafts/draft_$NEWD.md
 }
 
 ## Install R packages

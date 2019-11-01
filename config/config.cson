@@ -74,8 +74,8 @@
       "markdown-to-html"
       "random"
       "atom-ide-ui"
-      "markdown-preview-enhanced"
       "linter"
+      "markdown-preview-enhanced"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -85,7 +85,7 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
-    fontSize: 19
+    fontSize: 17
     invisibles: {}
     lineHeight: 1.45
     showIndentGuide: true
@@ -105,7 +105,7 @@
       "cpplint"
     ]
   "linter-ui-default":
-    panelHeight: 333
+    panelHeight: 300
   "metro-ui":
     themeAccentColor: "#e97a43"
   minimap:

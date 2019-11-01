@@ -50,6 +50,13 @@ fi
 ###############################################################################
 ###################### KevCaz's SETUP
 
+### Add NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_com$
+
+
+
 ### Welcome
 # Set the list of directories that Zsh searches for programs.
 path=(
@@ -65,8 +72,13 @@ source ~/.welcome
 
 ############### ALIAS
 
+# current directory in atom
+alias aa="atom -a ."
+
 # New windows of file manager here
-alias nw="nautilus -w .&"
+nw() {
+  nautilus -w .
+}
 
 # edit zprofile
 alias zedit="atom ~/.zprofile"
@@ -135,10 +147,13 @@ alias dotfiles='cd ~/Github/Others/dotfiles'
 ## Use bfg  https://rtyley.github.io/bfg-repo-cleaner/
 alias bfg='java -jar ~/.local/lib/java/bfg-1.13.0.jar'
 
-# Go to
-alias gorev='cd ~/Documents/Reviews'
-alias gopci='cd ~/Documents/Reviews/PCI'
+# Create a gitignore dotfile with the MacOS most annoying file
+gig='echo ".DS_Store" > .gitignore'
 
+# Go to
+alias gorev='cd ~/Documents/Research/Reviews'
+alias gopci='cd ~/Documents/Reviews/PCI'
+alias gopas='atom -a ~/Documents/Admin/pass'
 
 # change screen and keyboard backlight
 alias mysbl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
@@ -257,7 +272,7 @@ getPdf() {
 newreview() {
   VAR1=${1:-$RANDOM}
   NEWR=review_current$VAR1
-  cd ~/Documents/Reviews
+  cd ~/Documents/Research/Reviews
   cp -r emptyreview/ $NEWR
   echo "Created: "$NEWR
   atom -a $NEWR

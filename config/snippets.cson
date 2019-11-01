@@ -36,6 +36,12 @@
   'JuliaBloc':
     'prefix': 'jul'
     'body': '```julia\n$1\n```'
+  'EquationSytem':
+    'prefix': 'equ'
+    'body': "\\\\left\{\n \\\\begin{array}{r c l}\n  y &=& x - y\\\\\\\\\n  x &=& y \n \\\\end{array}\n\\\\right."
+
+
+
 
 
 '.source.r':

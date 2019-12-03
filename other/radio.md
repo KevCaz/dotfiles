@@ -45,12 +45,16 @@ http://192.240.102.198:14244/listen.pls?sid=1
 http://176.31.107.8:9019/listen.pls?sid=1
 
 
-
-
-# Audiophile => no longer available?
-http://8.38.78.173:8093/listen.pls?sid=1
-http://8.38.78.173:8045/listen.pls?sid=1
-http://8.38.78.173:8210/listen.pls?sid=1
-http://8.38.78.173:8226/listen.pls?sid=1
-http://8.38.78.173:8240/listen.pls?sid=1
-http://8.38.78.173:8156/listen.pls?sid=1
+# Audiophile http://stream.psychomed.gr/stream%20baroque.html
+<!-- baroque -->
+http://94.23.201.38:8000
+<!-- classique -->
+http://94.23.201.38:8010/
+<!-- jazz -->
+http://94.23.201.38:8020/
+<!-- lounge -->
+http://94.23.201.38:8030/
+<!-- rock blues -->
+http://94.23.201.38:8040/
+<!-- xtrem live -->
+http://94.23.201.38:8050/

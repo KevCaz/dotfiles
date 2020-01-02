@@ -29,3 +29,10 @@ atom.commands.add 'atom-text-editor', 'insert-breakline', ->
 atom.commands.add 'atom-text-editor', 'insert-shortcode', ->
   if editor = atom.workspace.getActiveTextEditor()
     editor.insertText('{{<  >}}')
+
+atom.commands.add 'atom-text-editor', 'insert-exlusive-or', ->
+  if editor = atom.workspace.getActiveTextEditor()
+    editor.insertText('⊻')
+
+
+

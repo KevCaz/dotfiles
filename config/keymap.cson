@@ -7,4 +7,5 @@
   'cmd-alt-y': 'insert-tee-print'
   'cmd-alt-b': 'insert-breakline'
   'cmd-alt-f': 'insert-shortcode'
-  'ctrl-alt-enter': 'platformio-ide-terminal:insert-selected-text'
+  'cmd-alt-o': 'insert-exlusive-or'
+  # 'ctrl-alt-enter': 'platformio-ide-terminal:insert-selected-text'

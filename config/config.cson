@@ -22,41 +22,10 @@
     enableUnicodeEmojis: false
   "autocomplete-font-awesome":
     version: "4.7.0"
-  "autocomplete-paths":
-    scopes: [
-      {
-        includeCurrentDirectory: true
-        prefixes: [
-          "source\\(['\"]"
-          "require\\(['\"]"
-          "read[^ ]*\\(['\"]"
-          "load[^ ]*\\(['\"]"
-          "\\]\\(['\"]"
-        ]
-        projectRelativePath: true
-        relative: true
-        scopes: [
-          "source.r"
-        ]
-      }
-      {
-        includeCurrentDirectory: true
-        prefixes: [
-          "src=['\"]"
-          "href=['\"]"
-          "\\]\\(['\"]"
-        ]
-        projectRelativePath: false
-        relative: true
-        scopes: [
-          "text.html.basic"
-          "source.gfm"
-          "source.r"
-        ]
-      }
-    ]
-  "autocomplete-plus": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
   core:
+    autoHideMenuBar: true
     customFileTypes:
       "source.ini": [
         ".hgrc"
@@ -76,6 +45,8 @@
       "atom-ide-ui"
       "linter"
       "markdown-preview-enhanced"
+      "ask-stack"
+      "Hydrogen"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -85,9 +56,10 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
-    fontSize: 17
+    fontSize: 21
     invisibles: {}
     lineHeight: 1.45
+    scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -99,6 +71,9 @@
     consoleOptions: {}
     firstBoot: false
     juliaPath: "/home/kevcaz/Github/Applications/julia/usr/bin/julia"
+    uiOptions:
+      enableMenu: true
+      enableToolBar: true
   linter:
     disabledProviders: [
       "lintr"
@@ -106,33 +81,11 @@
     ]
   "linter-ui-default":
     panelHeight: 300
+    showPanel: true
   "metro-ui":
     themeAccentColor: "#e97a43"
   minimap:
     adjustAbsoluteModeHeight: true
-  "platformio-ide-terminal":
-    ansiColors:
-      normal:
-        black: "#042029"
-        blue: "#3461a4"
-        cyan: "#3de2f0"
-        green: "#12ae8e"
-        magenta: "#89097c"
-        red: "#d94d4d"
-        yellow: "#d5cd56"
-      zBright:
-        brightBlack: "#b1adad"
-        brightBlue: "#4481dc"
-        brightGreen: "#14deb5"
-        brightMagenta: "#cc0db8"
-        brightRed: "#f95959"
-    style:
-      core:
-        scrollback: 2000
-      defaultPanelHeight: "500px"
-      theme: "solarized-dark"
-      toggles:
-        selectToCopy: false
   "scroll-through-time":
     direction: "down"
     modifierKey: "altKey"
@@ -164,14 +117,11 @@
     leftEditorColor: "red"
     rightEditorColor: "green"
     scrollSyncType: "Vertical + Horizontal"
-  term3:
-    colors:
-      background: "#1d1d1d"
-      brightBlack: "#6c6c6c"
-      normalBlack: "#1d1d1d"
-      normalGreen: "#2d6546"
-      normalRed: "#ae5c68"
+  "tool-bar":
+    position: "Left"
   "tree-view": {}
+  "uber-juno":
+    disable: true
   welcome:
     showOnStartup: false
   whitespace:

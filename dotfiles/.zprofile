@@ -50,11 +50,6 @@ fi
 ###############################################################################
 ###################### KevCaz's SETUP
 
-### Add NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_com$
-
 
 
 ### Welcome
@@ -148,7 +143,7 @@ alias dotfiles='cd ~/Github/Others/dotfiles'
 alias bfg='java -jar ~/.local/lib/java/bfg-1.13.0.jar'
 
 # Create a gitignore dotfile with the MacOS most annoying file
-gig='echo ".DS_Store" > .gitignore'
+alias gig='echo ".DS_Store" > .gitignore'
 
 # Go to
 alias gorev='cd ~/Documents/Research/Reviews'
@@ -169,6 +164,13 @@ alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 
 ## update debian packages
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
+## update python package
+alias updpy='
+  for i in  $(pip list --outdated --format=columns |tail -n +3|cut -d" " -f1); do pip install --user $i --upgrade
+  done'
+## update R package
+alias updrp='r -e "devtools::update_packages()"'
+
 ## update atom
 alias atomup='aria2c https://atom.io/download/deb && sudo dpkg -i atom-amd64.deb && rm atom-amd64.deb'
 
@@ -298,15 +300,26 @@ topdf() {
   pandoc $1 -o ${1%.*}.pdf --bibliography=/home/kevcaz/Dropbox/kevcaz.bib --pdf-engine=pdflatex
 }
 
-## Convert a file to pdf using pandoc
+## Convert a file to docx using pandoc
 todocx() {
   pandoc $1 -o ${1%.*}.docx --bibliography=/home/kevcaz/Dropbox/kevcaz.bib
+}
+
+## Convert a file to odt
+toodt() {
+  pandoc $1 -o ${1%.*}.odt --bibliography=/home/kevcaz/Dropbox/kevcaz.bib
 }
 
 ## Convert xlsx or xls to csv files (one per sheet)
 tocsv() {
   ssconvert -S $1 %s.csv;
 }
+
+##
+towebfonts() {
+  fontforge -script ~/.kevcaz/towebfonts.pe $1;
+}
+
 
 ## Change extensions
 chgext() {

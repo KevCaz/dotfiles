@@ -6,6 +6,8 @@ clone:
 	cp ~/.atom/*.coffee config/
 	cp ~/.julia/config/* config/julia/
 	cp ~/.kevcaz/to* config/kevcaz/
+	cp -r ~/.config/VSCodium/User/snippets config/vscodium/
+	cp ~/.config/VSCodium/User/settings.json config/vscodium/
 
 deploy:
 	cp dotfiles/.z* ~/

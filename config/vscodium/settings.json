@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "Material Theme High Contrast",
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "fontAwesomeAutocomplete.patterns": [
+        "**/*.html",
+        "**/*.md",
+        "**/*.rmd"
+    ],
+    "editor.fontSize": 12,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "solid",
+    "window.zoomLevel": 1
+}

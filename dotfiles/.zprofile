@@ -69,6 +69,8 @@ source ~/.welcome
 
 # current directory in atom
 alias aa="atom -a ."
+# current directory in vscodium
+alias vs="codium -a ."
 
 # New windows of file manager here
 nw() {
@@ -81,8 +83,6 @@ alias zedit="atom ~/.zprofile"
 # dropbox
 alias dbox='~/.dropbox-dist/dropboxd &'
 
-# firefox stable
-alias fire='snap run firefox &'
 
 # to display hidden files
 alias ls='ls -a'

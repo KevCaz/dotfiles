@@ -7,7 +7,7 @@ clone:
 	cp ~/.julia/config/* config/julia/
 	cp ~/.kevcaz/to* config/kevcaz/
 	cp -r ~/.config/VSCodium/User/snippets config/vscodium/
-	cp ~/.config/VSCodium/User/settings.json config/vscodium/
+	cp ~/.config/VSCodium/User/*.json config/vscodium/
 
 deploy:
 	cp dotfiles/.z* ~/
@@ -17,3 +17,4 @@ deploy:
 	cp config/*.cson ~/.atom/
 	cp config/*.coffee ~/.atom/
 	cp config/julia/config/* ~.julia/config/
+

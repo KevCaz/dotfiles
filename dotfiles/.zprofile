@@ -164,7 +164,7 @@ alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 
 ## update debian packages
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
-## update python package
+## update python packages
 alias updpy='
   for i in  $(pip list --outdated --format=columns |tail -n +3|cut -d" " -f1); do pip install --user $i --upgrade
   done'

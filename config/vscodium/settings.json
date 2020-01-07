@@ -12,5 +12,7 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.cursorBlinking": "solid",
-    "window.zoomLevel": 1
+    "editor.rulers": [ 80 ],
+    "window.zoomLevel": 2,
+    "editor.wordWrap": "bounded"
 }

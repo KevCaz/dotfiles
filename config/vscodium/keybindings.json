@@ -1,7 +1,7 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "-",
+        "key": "ctrl+tab ctrl+tab",
         "command": "editor.action.removeCommentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -11,7 +11,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "-",
+        "key": "ctrl+alt+f",
         "command": "editor.toggleFold",
         "when": "editorTextFocus && foldingEnabled"
     },
@@ -27,5 +27,9 @@
     {
         "key": "ctrl+k ctrl+l",
         "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "alt+b",
+        "command": "HookyQR.beautifyFile"
     }
 ]

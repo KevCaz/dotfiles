@@ -19,44 +19,52 @@ grDevices::X11.options(width=10, height=10)
 .libPaths("/home/kevcaz/R/x86_64-pc-linux-gnu-library/3.5")
 
 ##-- few useful functions
+clr <- function() system('clear')
 reset <- function() system('reset')
-clear <- function() system('clear')
+#
 getCit <- function(x)
   cat(toBibtex(citation(x)), file = paste0(x, '.bib'), sep = "\n")
+#
 sqBloc <- function(i, sz) (i-1)*sz + seq_len(sz)
+#
 notCran <- function(not_cran) Sys.setenv(NOT_CRAN = not_cran)
+#
 pch_demo <- function(n = 25) {
   sq <- 1:n
   plot(sq, pch = sq)
   text(sq, sq, labels = sq, pos = 3)
 }
-myRpkg <- function() {
+
+##-- development packages
+devel <- function() {
   lapply(
-    list(
-      "devtools",
-      "graphicsutils",
-      "inSilecoMisc",
-      "rmarkdown",
-      "testthat",
-      "tidyverse",
-      "usethis"
-      ),
-    require, character.only = TRUE)
+    list("devtools", "testthat", "usethis", "goodpractice"), require,
+      character.only = TRUE)
   cat("\n", crayon::green("packages loaded\n"))
   invisible(NULL)
 }
+
+##-- development packages
+dasci <- function() {
+  lapply(
+    list("tidyverse", "magrittr", "sf", "raster", "graphicsutils"), require,
+      character.only = TRUE)
+  cat("\n", crayon::green("packages loaded\n"))
+  invisible(NULL)
+}
+
 # convert units
 conv <- function(x, from = "fahrenheit", to = "celsius") {
   units::as_units(0, to) +
   units::as_units(as.numeric(x), from)
 }
+
 # get my pubs
 mypubs <- function(orcid = "0000-0001-6619-9874", filename = "pubs.bib") {
   my_dois <- unique(rorcid::identifiers(rorcid::works(orcid)))
   pubs <- rcrossref::cr_cn(dois = my_dois, format = "bibtex")
   invisible(lapply(pubs, write, filename, append=TRUE))
 }
-
 
 
 ## Function triggered when starting a new session

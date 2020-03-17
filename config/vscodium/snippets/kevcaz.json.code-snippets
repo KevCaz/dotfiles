@@ -21,5 +21,13 @@
 			"<i class='$1'></i>"
 		],
 		"description": "icon tag"
+	},
+
+	"gh-icon": {
+		"prefix": "gh",
+		"body": [
+			"<i class='fab fa-github'></i>"
+		],
+		"description": "icon tag"
 	}
 }

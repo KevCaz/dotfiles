@@ -18,6 +18,8 @@ grDevices::X11.options(width=10, height=10)
 ##-- libpaths
 .libPaths("/home/kevcaz/R/x86_64-pc-linux-gnu-library/3.5")
 
+options(usethis.full_name = "Kevin Cazelles")
+
 ##-- few useful functions
 clr <- function() system('clear')
 reset <- function() system('reset')
@@ -38,8 +40,8 @@ pch_demo <- function(n = 25) {
 ##-- development packages
 devel <- function() {
   lapply(
-    list("devtools", "testthat", "usethis", "goodpractice"), require,
-      character.only = TRUE)
+    list("devtools", "testthat", "usethis", "goodpractice", "microbenchmark"),
+      require, character.only = TRUE)
   cat("\n", crayon::green("packages loaded\n"))
   invisible(NULL)
 }

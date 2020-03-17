@@ -120,7 +120,7 @@ getgraham() {
 # Find processus
 alias psgrep='ps aux | grep'
 ## Search in Zotero database
-alias seazot='grep -rnw ~/Zotero/storage/ -e'
+alias sz='grep -rnw ~/Zotero/storage/ -e'
 ## Search in all docs
 alias seadoc='grep -rnw /home/kevcaz/ -e'
 ## Search in installed packages
@@ -144,6 +144,7 @@ alias bfg='java -jar ~/.local/lib/java/bfg-1.13.0.jar'
 
 # Create a gitignore dotfile with the MacOS most annoying file
 alias gig='echo ".DS_Store" > .gitignore'
+alias ged='git add -A; git commit --amend'
 
 # Go to
 alias gorev='cd ~/Documents/Research/Reviews'
@@ -333,3 +334,5 @@ chgext() {
 junk() {
   mv "$@" ~/.Trash/;
  }
+
+export PATH="$HOME/.cargo/bin:$PATH"

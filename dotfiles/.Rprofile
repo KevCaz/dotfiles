@@ -45,6 +45,22 @@ devel <- function() {
   cat("\n", crayon::green("packages loaded\n"))
   invisible(NULL)
 }
+##
+dl <- function() {
+  devel()
+  devtools::load_all();
+}
+ld <- function() {
+  devtools::load_all()
+  devtools::document()
+}
+ldc <-  function() {
+  devtools::load_all()
+  devtools::document()
+  devtools::check()
+}
+# Mapview shortcut
+mpv <- mapview::mapview
 
 ##-- development packages
 dasci <- function() {

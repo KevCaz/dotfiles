@@ -240,6 +240,12 @@ mygit() {
   git push;
 }
 
+# Classical git no push
+mygitl() {
+  git add -A;
+  git commit -m "$1";
+}
+
 # to outBox
 outbox() {
   mv $@ ~/Dropbox/outBox/

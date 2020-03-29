@@ -32,7 +32,7 @@ sqBloc <- function(i, sz) (i-1)*sz + seq_len(sz)
 notCran <- function(not_cran) Sys.setenv(NOT_CRAN = not_cran)
 #
 pch_demo <- function(n = 25) {
-  sq <- 1:n
+  sq <- seq_len(n)
   plot(sq, pch = sq)
   text(sq, sq, labels = sq, pos = 3)
 }
@@ -53,6 +53,11 @@ dl <- function() {
 ld <- function() {
   devtools::load_all()
   devtools::document()
+}
+ldt <- function() {
+  devtools::load_all()
+  devtools::document()
+  devtools::test()
 }
 ldc <-  function() {
   devtools::load_all()

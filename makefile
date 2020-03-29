@@ -5,7 +5,7 @@ clone:
 	cp ~/.atom/*.cson config/
 	cp ~/.atom/*.coffee config/
 	cp ~/.julia/config/* config/julia/
-	cp ~/.kevcaz/to* config/kevcaz/
+	cp -r ~/.kevcaz/ config/
 	cp -r ~/.config/VSCodium/User/snippets config/vscodium/
 	cp ~/.config/VSCodium/User/*.json config/vscodium/
 

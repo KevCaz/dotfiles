@@ -54,7 +54,7 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
-    fontSize: 15
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.45
     scrollPastEnd: true
@@ -79,7 +79,6 @@
     ]
   "linter-ui-default":
     panelHeight: 300
-    showPanel: true
   "metro-ui":
     themeAccentColor: "#e97a43"
   minimap:

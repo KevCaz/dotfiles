@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Create an enpty gh-pages branch
+
+git checkout --orphan gh-pages
+git rm -rf .
+git commit --allow-empty -m 'Initial gh-pages commit'
+git push origin gh-pages
+git checkout master

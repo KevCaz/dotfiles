@@ -1,7 +1,5 @@
 #### KevCaz's .Rprofile
 
-##-- Set the RNG
-set.seed(7891)
 
 ##-- options (explicit enough)
 options(
@@ -13,7 +11,7 @@ options(
   # stringsAsFactors = FALSE
 )
 ##-- X11 options
-grDevices::X11.options(width=10, height=10)
+grDevices::X11.options(width = 10, height = 10)
 
 ##-- libpaths
 .libPaths("/home/kevcaz/R/x86_64-pc-linux-gnu-library/3.5")
@@ -40,7 +38,8 @@ pch_demo <- function(n = 25) {
 ##-- development packages
 devel <- function() {
   lapply(
-    list("devtools", "testthat", "usethis", "goodpractice", "microbenchmark"),
+    list("devtools", "testthat", "usethis", "goodpractice", "microbenchmark",
+    "pkgdown"),
       require, character.only = TRUE)
   cat("\n", crayon::green("packages loaded\n"))
   invisible(NULL)
@@ -55,17 +54,19 @@ ld <- function() {
   devtools::document()
 }
 ldt <- function() {
-  devtools::load_all()
-  devtools::document()
+  ld()
   devtools::test()
 }
 ldc <-  function() {
-  devtools::load_all()
-  devtools::document()
+  ld()
   devtools::check()
 }
 # Mapview shortcut
 mpv <- mapview::mapview
+# head shortcut
+h <- utils::head
+# names
+nm <- base::names
 
 ##-- development packages
 dasci <- function() {
@@ -86,7 +87,7 @@ conv <- function(x, from = "fahrenheit", to = "celsius") {
 mypubs <- function(orcid = "0000-0001-6619-9874", filename = "pubs.bib") {
   my_dois <- unique(rorcid::identifiers(rorcid::works(orcid)))
   pubs <- rcrossref::cr_cn(dois = my_dois, format = "bibtex")
-  invisible(lapply(pubs, write, filename, append=TRUE))
+  invisible(lapply(pubs, write, filename, append = TRUE))
 }
 
 

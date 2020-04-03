@@ -145,6 +145,7 @@ alias bfg='java -jar ~/.local/lib/java/bfg-1.13.0.jar'
 # Create a gitignore dotfile with the MacOS most annoying file
 alias gig='echo ".DS_Store" > .gitignore'
 alias ged='git add -A; git commit --amend'
+alias ggp='sh ~/.kevcaz/emptybranchghpages'
 
 # Go to
 alias gorev='cd ~/Documents/Research/Reviews'

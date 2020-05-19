@@ -39,7 +39,7 @@ pch_demo <- function(n = 25) {
 devel <- function() {
   lapply(
     list("devtools", "testthat", "usethis", "goodpractice", "microbenchmark",
-    "pkgdown"),
+    "pkgdown", "rhub"),
       require, character.only = TRUE)
   cat("\n", crayon::green("packages loaded\n"))
   invisible(NULL)
@@ -52,6 +52,10 @@ dl <- function() {
 ld <- function() {
   devtools::load_all()
   devtools::document()
+}
+ldl <- function() {
+  ld()
+  devtools::load_all()
 }
 ldt <- function() {
   ld()

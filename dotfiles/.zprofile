@@ -147,6 +147,11 @@ alias gig='echo ".DS_Store" > .gitignore'
 alias ged='git add -A; git commit --amend'
 alias ggp='sh ~/.kevcaz/emptybranchghpages'
 
+# Generate ssh keys
+alias mykeygen='ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pages -N ""'
+
+
+
 # Go to
 alias gorev='cd ~/Documents/Research/Reviews'
 alias gopci='cd ~/Documents/Reviews/PCI'
@@ -186,6 +191,7 @@ alias renvi='sudo nano /usr/lib/R/etc/Renviron.site'
 alias redit='atom ~/.Rprofile'
 alias rhome='cd /usr/lib/R'
 alias rupdate='update.r -l /usr/local/lib/R/site-library'
+alias clean_r='rm -rf src/*.o src/*.so man'
 
 # Websites
 ## launch my website
@@ -200,6 +206,14 @@ newnotes() {
     hugo new notes/$a
   done
 }
+
+
+# encoding/decoding url
+# https://unix.stackexchange.com/questions/159253/decoding-url-encoding-percent-encoding
+alias urldecode='python3 -c "import sys, urllib.parse as ul; \
+    print(ul.unquote_plus(sys.argv[1]))"'
+alias urlencode='python3 -c "import sys, urllib.parse as ul; \
+    print (ul.quote_plus(sys.argv[1]))"'
 
 ## Julia
 alias judit='atom ~/.julia/config/startup.jl'
@@ -291,6 +305,18 @@ newreview() {
 newdraft() {
   NEWD=${1:-$RANDOM}
   atom -a ~/Dropbox/_drafts/draft_$NEWD.md
+}
+
+##
+newbackup() {
+  dir='/media/kevcaz/work/backup/'
+  date=$(date '+%Y-%m-%d')
+  mkdir $dir$date
+  # cp -r ~/Documents $dir
+  cp -r ~/Documents $dir$date
+  cp -r ~/Github $dir$date
+  tar -czvf $dir$date/Zotero.tar.gz ~/Zotero
+  tar -czvf $dir$date/Calibre.tar.gz ~/Calibre
 }
 
 ## Install R packages

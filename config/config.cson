@@ -49,12 +49,12 @@
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
-      "atom-material-syntax"
+      "atom-material-syntax-dark"
     ]
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
-    fontSize: 12
+    fontSize: 21
     invisibles: {}
     lineHeight: 1.45
     scrollPastEnd: true

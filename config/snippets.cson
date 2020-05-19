@@ -26,22 +26,28 @@
     'body': '<i class="fa fa-$1" aria-hidden="true"></i>$2'
   'CRAN':
     'prefix': 'cran'
-    'body': 'https://cran.r-project.org/web/packages/$1/index.html'
+    'body': '[`$1`](https://CRAN.R-project.org/package=$1)'
+  'Travis':
+    'prefix': 'trav'
+    'body': '[Travis](https://travis-ci.org/)'
   'Shortcode':
     'prefix': 'shtcod'
     'body': '{{< name$1 arg >}}'
   'ImageCenter':
     'prefix': 'imgc'
     'body': '{{< imgcenter path$1 $2 >}}'
+  'figcenter':
+    'prefix': 'fig'
+    'body': '{{< figcenter path$1 $2 >}}'
+  'DOI':
+    'prefix': 'doi'
+    'body': '{{< doi "$1" >}}'
   'JuliaBloc':
     'prefix': 'jul'
     'body': '```julia\n$1\n```'
   'EquationSytem':
     'prefix': 'equ'
     'body': "\\\\left\{\n \\\\begin{array}{r c l}\n  y &=& x - y\\\\\\\\\n  x &=& y \n \\\\end{array}\n\\\\right."
-
-
-
 
 
 '.source.r':

@@ -15,5 +15,3 @@ deploy:
 	cp dotfiles/.Rprofile ~/
 	cp config/*.cson ~/.atom/
 	cp config/*.coffee ~/.atom/
-	cp config/julia/config/* ~.julia/config/
-

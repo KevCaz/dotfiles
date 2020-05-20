@@ -309,14 +309,27 @@ newdraft() {
 
 ##
 newbackup() {
-  dir='/media/kevcaz/work/backup/'
-  date=$(date '+%Y-%m-%d')
-  mkdir $dir$date
-  # cp -r ~/Documents $dir
-  cp -r ~/Documents $dir$date
-  cp -r ~/Github $dir$date
-  tar -czvf $dir$date/Zotero.tar.gz ~/Zotero
-  tar -czvf $dir$date/Calibre.tar.gz ~/Calibre
+  dir='/media/kevcaz/work/backup/'$(date '+%Y-%m-%d')
+  mkdir $dir
+  echo $dir has been created!
+
+  echo Now copying /Documents...
+  cp -r ~/Documents $dir
+
+  echo Now copying /Github...
+  cp -r ~/Github $dir
+
+  echo Now creating an archive of /Pictures...
+  tar -czf $dir/Pict.tar.gz ~/Pictures
+
+  echo Now creating an archive of /Zotero...
+  tar -czf $dir/Zotero.tar.gz ~/Zotero
+
+  echo Now creating an archive of /Calibre...
+  tar -czf $dir/Calibre.tar.gz ~/Calibre
+
+  echo Now creating the last archive...
+  tar -czf $dir/Other.tar.gz /usr/lib/R/etc/Renviron.site ~/Dropbox/noteuti.md
 }
 
 ## Install R packages

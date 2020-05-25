@@ -94,6 +94,15 @@ mypubs <- function(orcid = "0000-0001-6619-9874", filename = "pubs.bib") {
   invisible(lapply(pubs, write, filename, append = TRUE))
 }
 
+# Torrent
+easy_torrent <- function(x, mx = 20, path = "~/Downloads") {
+  df <- omdbr::find_imdb_id(search = x, n_max = mx)
+  print(df)
+  id <- as.numeric(readline("Select an id (i.e. a row): "))
+  omdbr:::get_torrent(df$imdbid[id], path = path, open = TRUE)
+  invisible(NULL)
+}
+
 
 ## Function triggered when starting a new session
 ## No need for .first() function

@@ -13,7 +13,7 @@
     "editor.fontLigatures": true,
     "editor.cursorBlinking": "solid",
     "editor.rulers": [ 80 ],
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "editor.wordWrap": "bounded",
     "C_Cpp.updateChannel": "Insiders",
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",

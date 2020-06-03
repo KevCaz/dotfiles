@@ -119,6 +119,9 @@ getgraham() {
 # Searches
 # Find processus
 alias psgrep='ps aux | grep'
+# search file name in user file
+alias ff='find ~ -name'
+alias ffi='find ~ -iname'
 ## Search in Zotero database
 alias sz='grep -rnw ~/Zotero/storage/ -e'
 ## Search in all docs
@@ -292,6 +295,8 @@ getPdf() {
  wget "$(wget -qO- http://sci-hub.tw/$1 | grep iframe | grep -o 'https*://[^"]*')" -P ~/Downloads
 }
 
+
+
 ## New review
 newreview() {
   VAR1=${1:-$RANDOM}
@@ -307,6 +312,11 @@ newdraft() {
   atom -a ~/Dropbox/_drafts/draft_$NEWD.md
 }
 
+
+newrmd() {
+  echo "---\nauthor: Kevin Cazelles\n---" > $1.Rmd
+}
+
 ##
 newbackup() {
   dir='/media/kevcaz/work/backup/'$(date '+%Y-%m-%d')
@@ -320,16 +330,16 @@ newbackup() {
   cp -r ~/Github $dir
 
   echo Now creating an archive of /Pictures...
-  tar -czf $dir/Pict.tar.gz ~/Pictures
+  tar -czf $dir/Pict.tar.gz -absolute-names ~/Pictures
 
   echo Now creating an archive of /Zotero...
-  tar -czf $dir/Zotero.tar.gz ~/Zotero
+  tar -czf $dir/Zotero.tar.gz -absolute-names ~/Zotero
 
   echo Now creating an archive of /Calibre...
-  tar -czf $dir/Calibre.tar.gz ~/Calibre
+  tar -czf $dir/Calibre.tar.gz -absolute-names ~/Calibre
 
   echo Now creating the last archive...
-  tar -czf $dir/Other.tar.gz /usr/lib/R/etc/Renviron.site ~/Dropbox/noteuti.md
+  tar -czf $dir/Other.tar.gz /usr/lib/R/etc/Renviron.site -absolute-names ~/Dropbox/noteuti.md
 }
 
 ## Install R packages

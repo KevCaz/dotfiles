@@ -54,7 +54,7 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     lineHeight: 1.45
     scrollPastEnd: true

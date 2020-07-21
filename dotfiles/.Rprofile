@@ -72,7 +72,7 @@ h <- utils::head
 # names
 nm <- base::names
 
-##-- development packages
+##-- data science packages
 dasci <- function() {
   lapply(
     list("tidyverse", "magrittr", "sf", "raster", "graphicsutils"), require,
@@ -88,9 +88,11 @@ conv <- function(x, from = "fahrenheit", to = "celsius") {
 }
 
 # get my pubs
-mypubs <- function(orcid = "0000-0001-6619-9874", filename = "pubs.bib") {
+mypubs <- function(orcid = "0000-0001-6619-9874",
+  filename = "~/Github/Others/CV_latex/pubs.bib", rm = TRUE) {
   my_dois <- unique(rorcid::identifiers(rorcid::works(orcid)))
   pubs <- rcrossref::cr_cn(dois = my_dois, format = "bibtex")
+  if (rm) file.remove(filename)
   invisible(lapply(pubs, write, filename, append = TRUE))
 }
 
@@ -102,6 +104,13 @@ easy_torrent <- function(x, mx = 20, path = "~/Downloads") {
   omdbr:::get_torrent(df$imdbid[id], path = path, open = TRUE)
   invisible(NULL)
 }
+
+# # Add beer
+# add_microbrew <- function(name, pos, address) {
+#   list(
+#
+#   )
+# }
 
 
 ## Function triggered when starting a new session

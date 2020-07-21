@@ -36,8 +36,8 @@ nw() {
   nautilus -w .
 }
 
-# edit zprofile
-alias zedit="atom ~/.zprofile"
+# edit zshrc
+alias zedit="atom ~/.zshrc"
 
 # dropbox
 alias dbox='~/.dropbox-dist/dropboxd &'
@@ -62,6 +62,15 @@ getfrommac() {
   scp -rp KevCaz@10.0.1.8:$1 $2
 }
 
+alias gorasp='ssh pi@192.168.0.19'
+alias goraspX='ssh -X pi@192.168.0.19'
+getfromraps() {
+  scp -rp pi@192.168.0.19:${1-./} $2
+}
+sendtoraps() {
+  scp -rp pi@192.168.0.19:$1 ${2-./}
+}
+
 # Get access to Graham
 alias gograham='ssh kevcaz@graham.computecanada.ca'
 # Send something to Mp2
@@ -70,7 +79,7 @@ sendgraham() {
 }
 # Get from Mp2
 getgraham() {
-  scp -rp kevcaz@graham.computecanada.ca:$1 $2
+  scp -rp kevcaz@graham.computecanada.ca:$1 ${2-~/Downloads/servers/}
 }
 
 sendmarie() {
@@ -81,6 +90,8 @@ sendmarie() {
 # Searches
 # Find processus
 alias psgrep='ps aux | grep'
+# search expression in files
+alias sz='grep -rnw ~ -e'
 # search file name in user file
 alias ff='find ~ -name'
 alias ffi='find ~ -iname'
@@ -145,6 +156,10 @@ alias updpy='
 ## update R package
 alias updrp='r -e "devtools::update_packages()"'
 
+
+## update my publication
+alias mypubs='R -e "mypubs()"'
+
 ## update atom
 alias atomup='aria2c https://atom.io/download/deb && sudo dpkg -i atom-amd64.deb && rm atom-amd64.deb'
 
@@ -179,7 +194,6 @@ alias judit='atom ~/.julia/config/startup.jl'
 
 ## display my orcid
 alias orcid='echo "0000-0001-6619-9874"'
-
 
 
 
@@ -299,21 +313,21 @@ newbackup() {
 
   echo Now copying /Documents...
   cp -r ~/Documents $dir
-
+  #
   echo Now copying /Github...
   cp -r ~/Github $dir
 
   echo Now creating an archive of /Pictures...
-  tar -czf $dir/Pict.tar.gz -absolute-names ~/Pictures
+  tar -czf $dir/Pict.tar.gz --absolute-names ~/Pictures
 
   echo Now creating an archive of /Zotero...
-  tar -czf $dir/Zotero.tar.gz -absolute-names ~/Zotero
+  tar -czf $dir/Zotero.tar.gz --absolute-names ~/Zotero
 
   echo Now creating an archive of /Calibre...
-  tar -czf $dir/Calibre.tar.gz -absolute-names ~/Calibre
+  tar -czf $dir/Calibre.tar.gz --absolute-names ~/Calibre
 
   echo Now creating the last archive...
-  tar -czf $dir/Other.tar.gz /usr/lib/R/etc/Renviron.site -absolute-names ~/Dropbox/noteuti.md
+  tar -czf $dir/Other.tar.gz /usr/lib/R/etc/Renviron.site --absolute-names ~/Dropbox/noteuti.md
 }
 
 ## Install R packages
@@ -365,6 +379,12 @@ junk() {
   mv "$@" ~/.Trash/;
  }
 
+
+
+## watch youtube video
+youtube-wt() {
+  cvlc "$(youtube-dl -g -f mp4 $1)"
+}
 
 
 

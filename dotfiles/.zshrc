@@ -327,7 +327,7 @@ newbackup() {
   tar -czf $dir/Calibre.tar.gz --absolute-names ~/Calibre
 
   echo Now creating the last archive...
-  tar -czf $dir/Other.tar.gz /usr/lib/R/etc/Renviron.site --absolute-names ~/Dropbox/noteuti.md
+  tar -czf $dir/other_important.tar.gz --absolute-names ~/Dropbox/noteuti.md /usr/lib/R/etc/Renviron.site ~/.local
 }
 
 ## Install R packages

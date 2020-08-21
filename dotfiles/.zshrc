@@ -45,6 +45,7 @@ alias dbox='~/.dropbox-dist/dropboxd &'
 
 # to display hidden files
 alias ls='ls -a'
+alias lls='ls -alh'
 
 # todolist
 alias todo='atom -a ~/Github/Others/toutdoux'
@@ -133,7 +134,9 @@ alias mykeygen='ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pa
 # Go to
 alias gorev='cd ~/Documents/Research/Reviews'
 alias gopci='cd ~/Documents/Reviews/PCI'
+
 alias gopas='atom -a ~/Documents/Admin/pass'
+alias notes='atom -a ~/.kevcaz/notes.md'
 
 # change screen and keyboard backlight
 alias mysbl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
@@ -180,6 +183,7 @@ alias clean_r='rm -rf src/*.o src/*.so man'
 alias hukev='ghw && cd KevCaz.github.io && hugo server &; firefox http://localhost:1313/; fg;'
 ## launch inSileco local website
 alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-site-file -e "blogdown::serve_site()"'
+
 
 
 # encoding/decoding url

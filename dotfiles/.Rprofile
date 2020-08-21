@@ -87,6 +87,11 @@ conv <- function(x, from = "fahrenheit", to = "celsius") {
   units::as_units(as.numeric(x), from)
 }
 
+# get package citation as files
+get_pkg_bib <- function(pkg) {
+    cat(toBibtex(citation(pkg)), file = paste0(pkg, ".bib"), sep = "\n") 
+}
+
 # get my pubs
 mypubs <- function(orcid = "0000-0001-6619-9874",
   filename = "~/Github/Others/CV_latex/pubs.bib", rm = TRUE) {

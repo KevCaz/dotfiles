@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Current selection to notes file
+xclip -o -selection primary >> ~/.kevcaz/notes.md
+echo $'\n' >> ~/.kevcaz/notes.md

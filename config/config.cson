@@ -54,13 +54,13 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
+    fontSize: 18
     invisibles: {}
     lineHeight: 1.45
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
-    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "1a84665e-d7b7-4a0c-9bb3-ad96960f1694"
   "file-icons": {}

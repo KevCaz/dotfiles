@@ -54,7 +54,6 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
-    fontSize: 18
     invisibles: {}
     lineHeight: 1.45
     scrollPastEnd: true
@@ -122,6 +121,7 @@
     showOnStartup: false
   whitespace:
     ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: false
   wordcount:
     alwaysOn: true
 ".md.text":

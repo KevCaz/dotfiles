@@ -1,0 +1,43 @@
+[/]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']
+max-screencast-length=uint32 3600
+
+[custom-keybindings/custom0]
+binding='<Super>y'
+command='nautilus -w'
+name='Open file manager'
+
+[custom-keybindings/custom1]
+binding='<Super>t'
+command='gnome-terminal'
+name='Terminal'
+
+[custom-keybindings/custom2]
+binding='<Super>z'
+command='/home/kevcaz/.local/lib/zotero/zotero'
+name='Zotero'
+
+[custom-keybindings/custom3]
+binding='<Super>c'
+command='gnome-calendar'
+name='Calendar'
+
+[custom-keybindings/custom4]
+binding='<Super>g'
+command='/home/kevcaz/.kevcaz/tognuterm'
+name='Send command to GNU terminal'
+
+[custom-keybindings/custom5]
+binding='<Super>j'
+command='/home/kevcaz/.kevcaz/toappli atom'
+name='toatom'
+
+[custom-keybindings/custom6]
+binding='<Super>f'
+command='/home/kevcaz/.kevcaz/toappl firefox-esr'
+name='tofirefox'
+
+[custom-keybindings/custom7]
+binding='<Super>b'
+command='/home/kevcaz/.kevcaz/tonotes'
+name='tonotes'

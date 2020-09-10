@@ -7,6 +7,10 @@ clone:
 	cp -r ~/.kevcaz/ config/
 	cp -r ~/.config/VSCodium/User/snippets config/vscodium/
 	cp ~/.config/VSCodium/User/*.json config/vscodium/
+	dconf dump /org/gnome/terminal/legacy/profiles:/ > config/gnome-terminal-profiles.dconf.bak
+	dconf dump /org/gnome/settings-daemon/plugins/media-keys/ > config/media-keys-keybindings.dconf.bak
+
+
 
 deploy:
 	cp dotfiles/.z* ~/
@@ -15,3 +19,6 @@ deploy:
 	cp dotfiles/.Rprofile ~/
 	cp config/*.cson ~/.atom/
 	cp config/*.coffee ~/.atom/
+	cp -r ~/config/.kevcaz/ ~/.kevcaz
+	dconf load /org/gnome/terminal/legacy/profiles:/ < config/gnome-terminal-profiles.dconf.bak
+	dconf dump /org/gnome/settings-daemon/plugins/media-keys/ < config/media-keys-keybindings.dconf.bak

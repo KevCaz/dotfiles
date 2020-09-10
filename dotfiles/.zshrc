@@ -157,7 +157,7 @@ alias updpy='
   for i in  $(pip list --outdated --format=columns |tail -n +3|cut -d" " -f1); do pip install --user $i --upgrade
   done'
 ## update R package
-alias updrp='r -e "devtools::update_packages()"'
+alias updrp='Rscript --no-init-file -e "devtools::update_packages()"'
 
 
 ## update my publication
@@ -332,6 +332,7 @@ newbackup() {
 
   echo Now creating the last archive...
   tar -czf $dir/other_important.tar.gz --absolute-names ~/Dropbox/noteuti.md /usr/lib/R/etc/Renviron.site ~/.local
+  cp /home/kevcaz/.local/share/dolphin-emu/GC/MemoryCard* $dir/
 }
 
 ## Install R packages

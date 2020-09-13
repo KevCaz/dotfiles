@@ -11,7 +11,6 @@ clone:
 	dconf dump /org/gnome/settings-daemon/plugins/media-keys/ > config/media-keys-keybindings.dconf.bak
 
 
-
 deploy:
 	cp dotfiles/.z* ~/
 	cp dotfiles/.welcome ~/
@@ -19,6 +18,6 @@ deploy:
 	cp dotfiles/.Rprofile ~/
 	cp config/*.cson ~/.atom/
 	cp config/*.coffee ~/.atom/
-	cp -r ~/config/.kevcaz/ ~/.kevcaz
+	cp -r config/.kevcaz/ ~
 	dconf load /org/gnome/terminal/legacy/profiles:/ < config/gnome-terminal-profiles.dconf.bak
-	dconf dump /org/gnome/settings-daemon/plugins/media-keys/ < config/media-keys-keybindings.dconf.bak
+	dconf load /org/gnome/settings-daemon/plugins/media-keys/ < config/media-keys-keybindings.dconf.bak

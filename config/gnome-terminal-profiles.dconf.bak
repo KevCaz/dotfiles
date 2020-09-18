@@ -1,206 +1,206 @@
-[:e3f2175f-6854-4861-8f64-8437087e755f]
-foreground-color='#ffffffffffff'
-visible-name='Red Alert'
-palette=['#000000000000', '#d6d62e2e4e4e', '#7171bebe6b6b', '#bebeb8b86b6b', '#48489b9beeee', '#e9e97979d7d7', '#6b6bbebeb8b8', '#d6d6d6d6d6d6', '#262626262626', '#e0e025255353', '#afaff0f08c8c', '#dfdfddddb7b7', '#6565aaaaf1f1', '#ddddb7b7dfdf', '#b7b7dfdfdddd', '#ffffffffffff']
-default-size-columns=80
-use-system-font=false
-highlight-colors-set=true
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 10'
-use-theme-transparency=false
-allow-bold=true
-use-theme-background=false
-bold-color-same-as-fg=true
-highlight-background-color='#'
-background-color='#767624242323'
-bold-color='#ffffffffffff'
-highlight-foreground-color='#'
-
-[:6c2d4929-700a-43cd-92e7-de89681eb176]
-foreground-color='#C3C3C7C7D1D1'
-visible-name='Material'
-palette=['rgb(7,54,65)', 'rgb(235,96,107)', 'rgb(195,232,141)', 'rgb(247,235,149)', 'rgb(128,203,195)', 'rgb(255,36,144)', 'rgb(174,221,255)', 'rgb(255,255,255)', 'rgb(0,43,54)', 'rgb(235,96,107)', 'rgb(195,232,141)', 'rgb(247,235,149)', 'rgb(125,198,191)', 'rgb(108,113,195)', 'rgb(174,221,255)', 'rgb(255,255,255)']
-default-size-columns=80
-use-system-font=false
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 10'
-allow-bold=true
-use-theme-background=false
-bold-color-same-as-fg=true
-bold-color='#C3C3C7C7D1D1'
-background-color='rgb(7,54,65)'
-
-[:ddee5d55-63dd-41ad-afd9-9c3d5f67b5d5]
-foreground-color='#3b3b23232222'
-visible-name='Novel'
-palette=['#000000000000', '#cccc00000000', '#000096960000', '#d0d06b6b0000', '#00000000cccc', '#cccc0000cccc', '#00008787cccc', '#cccccccccccc', '#808080808080', '#cccc00000000', '#000096960000', '#d0d06b6b0000', '#00000000cccc', '#cccc0000cccc', '#00008787cccc', '#ffffffffffff']
-use-system-font=false
-highlight-colors-set=true
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 12'
-use-theme-transparency=false
-allow-bold=true
-use-theme-background=false
-bold-color-same-as-fg=true
-bold-color='#3b3b23232222'
-background-color='#dfdfdbdbc3c3'
-highlight-background-color='#'
-highlight-foreground-color='#'
-
-[:f411aefe-8edf-40b5-bc73-a434d186b00d]
-foreground-color='#f8f8f8f8f2f2'
-visible-name='Monokai Dark'
-palette=['#757571715e5e', '#f9f926267272', '#a6a6e2e22e2e', '#f4f4bfbf7575', '#6666d9d9efef', '#aeae8181ffff', '#2A2AA1A19898', '#f9f9f8f8f5f5', '#272728282222', '#f9f926267272', '#a6a6e2e22e2e', '#f4f4bfbf7575', '#6666d9d9efef', '#aeae8181ffff', '#2A2AA1A19898', '#f8f8f8f8f2f2']
-use-system-font=false
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 12'
-allow-bold=true
-use-theme-background=false
-bold-color-same-as-fg=true
-bold-color='#f8f8f8f8f2f2'
-background-color='#272728282222'
-
-[:912d6776-531e-4606-9cd5-1f623b96052b]
-foreground-color='rgb(211,215,207)'
-visible-name='kevcaz'
-palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
-cell-width-scale=1.0
-use-system-font=false
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 11'
-background-color='rgb(46,52,54)'
-scrollback-lines=20000
-
-[:608d939a-15fd-4f6d-97e7-7ffb2e5b29c0]
-foreground-color='#d9d9e6e6f2f2'
-visible-name='Cai'
-palette=['#000000000000', '#caca27274d4d', '#4d4dcaca2727', '#cacaa4a42727', '#27274d4dcaca', '#a4a42727caca', '#2727cacaa4a4', '#808080808080', '#808080808080', '#e9e98d8da3a3', '#a3a3e9e98d8d', '#e9e9d4d48d8d', '#8d8da3a3e9e9', '#d4d48d8de9e9', '#8d8de9e9d4d4', '#ffffffffffff']
-use-system-font=false
-highlight-colors-set=true
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 12'
-use-theme-transparency=false
-allow-bold=true
-use-theme-background=false
-bold-color-same-as-fg=true
-bold-color='#d9d9e6e6f2f2'
-background-color='#090911111a1a'
-highlight-background-color='#'
-highlight-foreground-color='#'
-
-[:150527a9-1926-48b1-b3c9-04703a733cf7]
-foreground-color='#CCCCCCCCCCCC'
-visible-name='VS Code Dark+'
-palette=['#6A6A78787A7A', '#E9E965653B3B', '#3939E9E9A8A8', '#E5E5B6B68484', '#4444AAAAE6E6', '#E1E175759999', '#3D3DD5D5E7E7', '#C3C3DDDDE1E1', '#595984848989', '#E6E650502929', '#0000FFFF9A9A', '#E8E894944040', '#00009A9AFBFB', '#FFFF57578F8F', '#5F5FFFFFFFFF', '#D9D9FBFBFFFF']
-use-system-font=false
-highlight-colors-set=true
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 12'
-use-theme-transparency=false
-allow-bold=true
-use-theme-background=false
-bold-color-same-as-fg=true
-bold-color='#CCCCCCCCCCCC'
-background-color='#1E1E1E1E1E1E'
-highlight-background-color='#'
-highlight-foreground-color='#'
-
-[:2f47159e-4c38-4c89-9205-2b6c0d7feb85]
-foreground-color='#1a1abcbc9c9c'
-visible-name='Flat'
-palette=['rgb(31,45,58)', 'rgb(192,57,43)', 'rgb(39,174,96)', 'rgb(243,156,18)', 'rgb(41,128,185)', 'rgb(142,68,173)', 'rgb(22,160,133)', 'rgb(189,195,199)', 'rgb(52,73,94)', 'rgb(231,76,60)', 'rgb(46,204,113)', 'rgb(241,196,15)', 'rgb(52,152,219)', 'rgb(155,89,182)', 'rgb(42,161,152)', 'rgb(236,240,241)']
-use-system-font=false
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 12'
-allow-bold=true
-use-theme-background=false
-bold-color-same-as-fg=true
-bold-color='#1a1abcbc9c9c'
-background-color='rgb(31,45,58)'
+[/]
+default='7ebdc17e-f554-4b79-aa33-68bfc25ec56c'
+list=['912d6776-531e-4606-9cd5-1f623b96052b', '7ebdc17e-f554-4b79-aa33-68bfc25ec56c', '6c2d4929-700a-43cd-92e7-de89681eb176', 'f411aefe-8edf-40b5-bc73-a434d186b00d', '05ed9ab9-2551-4282-9802-8fde7317bcf0', '0600cd01-9cff-4d1c-a534-8eeedd344a7f', '995df533-2de3-48a9-8166-061f5cb5212b', '2f47159e-4c38-4c89-9205-2b6c0d7feb85', 'ddee5d55-63dd-41ad-afd9-9c3d5f67b5d5', '608d939a-15fd-4f6d-97e7-7ffb2e5b29c0', '150527a9-1926-48b1-b3c9-04703a733cf7', '9e050a41-ffda-4936-bf1f-a47a1e908a98', '8679eefc-7ef5-411c-a1a0-6c23397a9c56', 'e3f2175f-6854-4861-8f64-8437087e755f']
 
 [:05ed9ab9-2551-4282-9802-8fde7317bcf0]
+allow-bold=true
+background-color='#00002B2B3636'
+bold-color='#838394949696'
+bold-color-same-as-fg=true
+font='Fira Mono for Powerline Medium 12'
 foreground-color='#838394949696'
-visible-name='Solarized Dark'
 palette=['#070736364242', '#DCDC32322F2F', '#858599990000', '#CFCF9A9A6B6B', '#26268B8BD2D2', '#D3D336368282', '#2A2AA1A19898', '#EEEEE8E8D5D5', '#65657B7B8383', '#D8D879797979', '#8888CFCF7676', '#65657B7B8383', '#26269999FFFF', '#D3D336368282', '#4343B8B8C3C3', '#FDFDF6F6E3E3']
 use-system-font=false
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 12'
-allow-bold=true
 use-theme-background=false
-bold-color-same-as-fg=true
-bold-color='#838394949696'
-background-color='#00002B2B3636'
-
-[/]
-list=['912d6776-531e-4606-9cd5-1f623b96052b', '7ebdc17e-f554-4b79-aa33-68bfc25ec56c', '6c2d4929-700a-43cd-92e7-de89681eb176', 'f411aefe-8edf-40b5-bc73-a434d186b00d', '05ed9ab9-2551-4282-9802-8fde7317bcf0', '0600cd01-9cff-4d1c-a534-8eeedd344a7f', '995df533-2de3-48a9-8166-061f5cb5212b', '2f47159e-4c38-4c89-9205-2b6c0d7feb85', 'ddee5d55-63dd-41ad-afd9-9c3d5f67b5d5', '608d939a-15fd-4f6d-97e7-7ffb2e5b29c0', '150527a9-1926-48b1-b3c9-04703a733cf7', '9e050a41-ffda-4936-bf1f-a47a1e908a98', '8679eefc-7ef5-411c-a1a0-6c23397a9c56', 'e3f2175f-6854-4861-8f64-8437087e755f']
-default='6c2d4929-700a-43cd-92e7-de89681eb176'
+use-theme-colors=false
+visible-name='Solarized Dark'
 
 [:0600cd01-9cff-4d1c-a534-8eeedd344a7f]
+allow-bold=true
+background-color='#1E1E21212727'
+bold-color='#5C5C63637070'
+bold-color-same-as-fg=true
+font='Fira Mono for Powerline Medium 12'
 foreground-color='#5C5C63637070'
-visible-name='One Dark'
 palette=['#000000000000', '#E0E06C6C7575', '#9898C3C37979', '#D1D19A9A6666', '#6161AFAFEFEF', '#C6C67878DDDD', '#5656B6B6C2C2', '#ABABB2B2BFBF', '#5C5C63637070', '#E0E06C6C7575', '#9898C3C37979', '#D1D19A9A6666', '#6161AFAFEFEF', '#C6C67878DDDD', '#5656B6B6C2C2', '#FFFFFEFEFEFE']
 use-system-font=false
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 12'
-allow-bold=true
 use-theme-background=false
+use-theme-colors=false
+visible-name='One Dark'
+
+[:150527a9-1926-48b1-b3c9-04703a733cf7]
+allow-bold=true
+background-color='#1E1E1E1E1E1E'
+bold-color='#CCCCCCCCCCCC'
 bold-color-same-as-fg=true
-bold-color='#5C5C63637070'
-background-color='#1E1E21212727'
+font='Fira Mono for Powerline Medium 12'
+foreground-color='#CCCCCCCCCCCC'
+highlight-background-color='#'
+highlight-colors-set=true
+highlight-foreground-color='#'
+palette=['#6A6A78787A7A', '#E9E965653B3B', '#3939E9E9A8A8', '#E5E5B6B68484', '#4444AAAAE6E6', '#E1E175759999', '#3D3DD5D5E7E7', '#C3C3DDDDE1E1', '#595984848989', '#E6E650502929', '#0000FFFF9A9A', '#E8E894944040', '#00009A9AFBFB', '#FFFF57578F8F', '#5F5FFFFFFFFF', '#D9D9FBFBFFFF']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='VS Code Dark+'
+
+[:2f47159e-4c38-4c89-9205-2b6c0d7feb85]
+allow-bold=true
+background-color='rgb(31,45,58)'
+bold-color='#1a1abcbc9c9c'
+bold-color-same-as-fg=true
+font='Fira Mono for Powerline Medium 12'
+foreground-color='#1a1abcbc9c9c'
+palette=['rgb(31,45,58)', 'rgb(192,57,43)', 'rgb(39,174,96)', 'rgb(243,156,18)', 'rgb(41,128,185)', 'rgb(142,68,173)', 'rgb(22,160,133)', 'rgb(189,195,199)', 'rgb(52,73,94)', 'rgb(231,76,60)', 'rgb(46,204,113)', 'rgb(241,196,15)', 'rgb(52,152,219)', 'rgb(155,89,182)', 'rgb(42,161,152)', 'rgb(236,240,241)']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+visible-name='Flat'
+
+[:608d939a-15fd-4f6d-97e7-7ffb2e5b29c0]
+allow-bold=true
+background-color='#090911111a1a'
+bold-color='#d9d9e6e6f2f2'
+bold-color-same-as-fg=true
+font='Fira Mono for Powerline Medium 12'
+foreground-color='#d9d9e6e6f2f2'
+highlight-background-color='#'
+highlight-colors-set=true
+highlight-foreground-color='#'
+palette=['#000000000000', '#caca27274d4d', '#4d4dcaca2727', '#cacaa4a42727', '#27274d4dcaca', '#a4a42727caca', '#2727cacaa4a4', '#808080808080', '#808080808080', '#e9e98d8da3a3', '#a3a3e9e98d8d', '#e9e9d4d48d8d', '#8d8da3a3e9e9', '#d4d48d8de9e9', '#8d8de9e9d4d4', '#ffffffffffff']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='Cai'
+
+[:6c2d4929-700a-43cd-92e7-de89681eb176]
+allow-bold=true
+background-color='rgb(7,54,65)'
+bold-color='#C3C3C7C7D1D1'
+bold-color-same-as-fg=true
+default-size-columns=80
+font='Fira Mono for Powerline Medium 10'
+foreground-color='#C3C3C7C7D1D1'
+palette=['rgb(7,54,65)', 'rgb(235,96,107)', 'rgb(195,232,141)', 'rgb(247,235,149)', 'rgb(128,203,195)', 'rgb(255,36,144)', 'rgb(174,221,255)', 'rgb(255,255,255)', 'rgb(0,43,54)', 'rgb(235,96,107)', 'rgb(195,232,141)', 'rgb(247,235,149)', 'rgb(125,198,191)', 'rgb(108,113,195)', 'rgb(174,221,255)', 'rgb(255,255,255)']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+visible-name='Material'
 
 [:7ebdc17e-f554-4b79-aa33-68bfc25ec56c]
 background-color='rgb(38,38,38)'
-use-theme-colors=false
-palette=['rgb(38,38,38)', 'rgb(239,83,80)', 'rgb(195,232,141)', 'rgb(255,213,79)', 'rgb(121,134,203)', 'rgb(199,146,234)', 'rgb(6,152,154)', 'rgb(178,204,214)', 'rgb(85,87,83)', 'rgb(238,111,109)', 'rgb(111,136,83)', 'rgb(231,203,113)', 'rgb(89,174,241)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
-visible-name='material-dark'
-foreground-color='rgb(221,221,221)'
-use-system-font=false
 font='Fira Mono for Powerline Medium 12'
+foreground-color='rgb(221,221,221)'
+palette=['rgb(38,38,38)', 'rgb(239,83,80)', 'rgb(195,232,141)', 'rgb(255,213,79)', 'rgb(121,134,203)', 'rgb(199,146,234)', 'rgb(6,152,154)', 'rgb(178,204,214)', 'rgb(85,87,83)', 'rgb(238,111,109)', 'rgb(111,136,83)', 'rgb(231,203,113)', 'rgb(89,174,241)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-system-font=false
+use-theme-colors=false
+visible-name='material-dark'
 
 [:8679eefc-7ef5-411c-a1a0-6c23397a9c56]
-foreground-color='#fffff0f0a5a5'
-visible-name='Grass'
-palette=['#000000000000', '#bbbb00000000', '#0000bbbb0000', '#e7e7b0b00000', '#00000000a3a3', '#959500006262', '#0000bbbbbbbb', '#bbbbbbbbbbbb', '#555555555555', '#bbbb00000000', '#0000bbbb0000', '#e7e7b0b00000', '#00000000bbbb', '#ffff5555ffff', '#5555ffffffff', '#ffffffffffff']
-default-size-columns=80
-use-system-font=false
-highlight-colors-set=true
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 10'
-use-theme-transparency=false
 allow-bold=true
-use-theme-background=false
-bold-color-same-as-fg=true
-highlight-background-color='#'
 background-color='#131377773d3d'
 bold-color='#fffff0f0a5a5'
-highlight-foreground-color='#'
-
-[:9e050a41-ffda-4936-bf1f-a47a1e908a98]
-foreground-color='#f7f7d6d66a6a'
-visible-name='Mona Lisa'
-palette=['#35351b1b0e0e', '#9b9b29291c1c', '#636362623232', '#c3c36e6e2828', '#51515c5c5d5d', '#9b9b1d1d2929', '#585880805656', '#f7f7d7d75c5c', '#878742422828', '#ffff43433131', '#b4b4b2b26464', '#ffff95956666', '#9e9eb2b2b4b4', '#ffff5b5b6a6a', '#8a8acdcd8f8f', '#ffffe5e59898']
-use-system-font=false
-highlight-colors-set=true
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 12'
-use-theme-transparency=false
-allow-bold=true
-use-theme-background=false
 bold-color-same-as-fg=true
-bold-color='#f7f7d6d66a6a'
-background-color='#12120b0b0d0d'
+default-size-columns=80
+font='Fira Mono for Powerline Medium 10'
+foreground-color='#fffff0f0a5a5'
 highlight-background-color='#'
+highlight-colors-set=true
 highlight-foreground-color='#'
+palette=['#000000000000', '#bbbb00000000', '#0000bbbb0000', '#e7e7b0b00000', '#00000000a3a3', '#959500006262', '#0000bbbbbbbb', '#bbbbbbbbbbbb', '#555555555555', '#bbbb00000000', '#0000bbbb0000', '#e7e7b0b00000', '#00000000bbbb', '#ffff5555ffff', '#5555ffffffff', '#ffffffffffff']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='Grass'
+
+[:912d6776-531e-4606-9cd5-1f623b96052b]
+background-color='rgb(46,52,54)'
+cell-width-scale=1.0
+font='Fira Mono for Powerline Medium 11'
+foreground-color='rgb(211,215,207)'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+scrollback-lines=20000
+use-system-font=false
+use-theme-colors=false
+visible-name='kevcaz'
 
 [:995df533-2de3-48a9-8166-061f5cb5212b]
+allow-bold=true
+background-color='#161617171919'
+bold-color='#c5c5c8c8c6c6'
+bold-color-same-as-fg=true
+font='Fira Mono for Powerline Medium 12'
 foreground-color='#c5c5c8c8c6c6'
-visible-name='Atom'
 palette=['#000000000000', '#fdfd5f5ff1f1', '#8787c3c38a8a', '#ffffd7d7b1b1', '#8585bebefdfd', '#b9b9b6b6fcfc', '#8585bebefdfd', '#e0e0e0e0e0e0', '#000000000000', '#fdfd5f5ff1f1', '#9494fafa3636', '#f5f5ffffa8a8', '#9696cbcbfefe', '#b9b9b6b6fcfc', '#8585bebefdfd', '#e0e0e0e0e0e0']
 use-system-font=false
-use-theme-colors=false
-font='Fira Mono for Powerline Medium 12'
-allow-bold=true
 use-theme-background=false
+use-theme-colors=false
+visible-name='Atom'
+
+[:9e050a41-ffda-4936-bf1f-a47a1e908a98]
+allow-bold=true
+background-color='#12120b0b0d0d'
+bold-color='#f7f7d6d66a6a'
 bold-color-same-as-fg=true
-bold-color='#c5c5c8c8c6c6'
-background-color='#161617171919'
+font='Fira Mono for Powerline Medium 12'
+foreground-color='#f7f7d6d66a6a'
+highlight-background-color='#'
+highlight-colors-set=true
+highlight-foreground-color='#'
+palette=['#35351b1b0e0e', '#9b9b29291c1c', '#636362623232', '#c3c36e6e2828', '#51515c5c5d5d', '#9b9b1d1d2929', '#585880805656', '#f7f7d7d75c5c', '#878742422828', '#ffff43433131', '#b4b4b2b26464', '#ffff95956666', '#9e9eb2b2b4b4', '#ffff5b5b6a6a', '#8a8acdcd8f8f', '#ffffe5e59898']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='Mona Lisa'
+
+[:ddee5d55-63dd-41ad-afd9-9c3d5f67b5d5]
+allow-bold=true
+background-color='#dfdfdbdbc3c3'
+bold-color='#3b3b23232222'
+bold-color-same-as-fg=true
+font='Fira Mono for Powerline Medium 12'
+foreground-color='#3b3b23232222'
+highlight-background-color='#'
+highlight-colors-set=true
+highlight-foreground-color='#'
+palette=['#000000000000', '#cccc00000000', '#000096960000', '#d0d06b6b0000', '#00000000cccc', '#cccc0000cccc', '#00008787cccc', '#cccccccccccc', '#808080808080', '#cccc00000000', '#000096960000', '#d0d06b6b0000', '#00000000cccc', '#cccc0000cccc', '#00008787cccc', '#ffffffffffff']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='Novel'
+
+[:e3f2175f-6854-4861-8f64-8437087e755f]
+allow-bold=true
+background-color='#767624242323'
+bold-color='#ffffffffffff'
+bold-color-same-as-fg=true
+default-size-columns=80
+font='Fira Mono for Powerline Medium 10'
+foreground-color='#ffffffffffff'
+highlight-background-color='#'
+highlight-colors-set=true
+highlight-foreground-color='#'
+palette=['#000000000000', '#d6d62e2e4e4e', '#7171bebe6b6b', '#bebeb8b86b6b', '#48489b9beeee', '#e9e97979d7d7', '#6b6bbebeb8b8', '#d6d6d6d6d6d6', '#262626262626', '#e0e025255353', '#afaff0f08c8c', '#dfdfddddb7b7', '#6565aaaaf1f1', '#ddddb7b7dfdf', '#b7b7dfdfdddd', '#ffffffffffff']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='Red Alert'
+
+[:f411aefe-8edf-40b5-bc73-a434d186b00d]
+allow-bold=true
+background-color='#272728282222'
+bold-color='#f8f8f8f8f2f2'
+bold-color-same-as-fg=true
+font='Fira Mono for Powerline Medium 12'
+foreground-color='#f8f8f8f8f2f2'
+palette=['#757571715e5e', '#f9f926267272', '#a6a6e2e22e2e', '#f4f4bfbf7575', '#6666d9d9efef', '#aeae8181ffff', '#2A2AA1A19898', '#f9f9f8f8f5f5', '#272728282222', '#f9f926267272', '#a6a6e2e22e2e', '#f4f4bfbf7575', '#6666d9d9efef', '#aeae8181ffff', '#2A2AA1A19898', '#f8f8f8f8f2f2']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+visible-name='Monokai Dark'

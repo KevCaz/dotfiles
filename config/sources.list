@@ -1,29 +1,12 @@
-# 
-deb http://debian.mirror.rafal.ca/debian/ buster main contrib non-free
-deb-src http://debian.mirror.rafal.ca/debian/ buster main contrib non-free
+# Canada mirror 
+deb http://ftp.ca.debian.org/debian/ bullseye main contrib non-free
+deb-src http://ftp.ca.debian.org/debian/ bullseye main contrib non-free
 
-#
-deb http://security.debian.org/debian-security buster/updates main
-deb-src http://security.debian.org/debian-security buster/updates main
+# security updates 
+deb http://security.debian.org/ bullseye-security main contrib non-free
+deb-src http://security.debian.org/ bullseye-security main contrib non-free
 
-# R (https://cran.r-project.org/bin/linux/debian/#debian-buster-testing)
-deb http://cran.wu.ac.at/bin/linux/debian buster-cran35/
-
-# Wine
-deb https://dl.winehq.org/wine-builds/debian/ buster  main
-
-
-# Qgis
-#deb     https://qgis.org/debian unstable main
-#deb-src https://qgis.org/debian unstable main
-
-
-# This system was installed using small removable media
-# (e.g. netinst, live or single CD). The matching "deb cdrom"
-# entries were disabled at the end of the installation process.
-# For information about how to configure apt package sources,
-# see the sources.list(5) manual.
+# docker
 deb [arch=amd64] https://download.docker.com/linux/debian buster stable
-# deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable
-# deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable
-# deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable
+#deb-src [arch=amd64] https://download.docker.com/linux/debian buster stable
+

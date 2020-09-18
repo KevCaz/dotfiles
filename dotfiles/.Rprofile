@@ -14,7 +14,7 @@ options(
 grDevices::X11.options(width = 10, height = 10)
 
 ##-- libpaths
-.libPaths("/home/kevcaz/R/x86_64-pc-linux-gnu-library/3.5")
+# .libPaths("/home/kevcaz/R/x86_64-pc-linux-gnu-library/3.5")
 
 options(usethis.full_name = "Kevin Cazelles")
 
@@ -35,7 +35,7 @@ pch_demo <- function(n = 25) {
   text(sq, sq, labels = sq, pos = 3)
 }
 
-##-- development packages
+#-- development packages
 devel <- function() {
   lapply(
     list("devtools", "testthat", "usethis", "goodpractice", "microbenchmark",

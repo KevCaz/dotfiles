@@ -54,6 +54,7 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.45
     scrollPastEnd: true
@@ -65,6 +66,7 @@
   "file-icons": {}
   "julia-client":
     consoleOptions: {}
+    currentVersion: "0.12.5"
     firstBoot: false
     juliaPath: "/home/kevcaz/Github/Applications/julia/usr/bin/julia"
     uiOptions:

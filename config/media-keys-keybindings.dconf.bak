@@ -1,9 +1,9 @@
 [/]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/']
 max-screencast-length=uint32 3600
 
 [custom-keybindings/custom0]
-binding='<Super>y'
+binding='<Super>w'
 command='nautilus -w'
 name='Open file manager'
 
@@ -12,9 +12,39 @@ binding='<Super>t'
 command='gnome-terminal'
 name='Terminal'
 
+[custom-keybindings/custom10]
+binding='<Super>v'
+command='codium'
+name='VSCodium'
+
+[custom-keybindings/custom11]
+binding='<Super>k'
+command='slack'
+name='Slack'
+
+[custom-keybindings/custom12]
+binding='<Super>i'
+command='simplenote'
+name='Simplenote'
+
+[custom-keybindings/custom13]
+binding='<Super>q'
+command='qgis'
+name='QGIS'
+
+[custom-keybindings/custom14]
+binding='<Super>b'
+command='atom'
+name='Atom'
+
+[custom-keybindings/custom15]
+binding='<Super>x'
+command='thunderbird'
+name='Thunderbird'
+
 [custom-keybindings/custom2]
 binding='<Super>z'
-command='/home/kevcaz/.local/lib/zotero/zotero'
+command='/home/kevcaz/Applications/Zotero_linux-x86_64/zotero'
 name='Zotero'
 
 [custom-keybindings/custom3]
@@ -24,20 +54,30 @@ name='Calendar'
 
 [custom-keybindings/custom4]
 binding='<Super>g'
-command='/home/kevcaz/.kevcaz/tognuterm'
-name='Send command to GNU terminal'
+command='/home/kevcaz/.kevcaz/scripts/tognuterm'
+name='Copy and send command to GNU terminal'
 
 [custom-keybindings/custom5]
 binding='<Super>j'
-command='/home/kevcaz/.kevcaz/toappli atom'
-name='toatom'
+command='/home/kevcaz/.kevcaz/scripts/toappli atom'
+name='Copy and send to Atom'
 
 [custom-keybindings/custom6]
-binding='<Super>f'
-command='/home/kevcaz/.kevcaz/toappl firefox-esr'
-name='tofirefox'
+binding='<Super>d'
+command='/home/kevcaz/.kevcaz/scripts/toappl firefox-esr'
+name='Copy and send to Firefox'
 
 [custom-keybindings/custom7]
-binding='<Super>b'
-command='/home/kevcaz/.kevcaz/tonotes'
-name='tonotes'
+binding='<Primary><Super>e'
+command='/home/kevcaz/.kevcaz/scripts/tonotes'
+name='Copy and send notes.md'
+
+[custom-keybindings/custom8]
+binding='<Super>r'
+command='rhythmbox'
+name='Rhythmbox'
+
+[custom-keybindings/custom9]
+binding='<Super>f'
+command='firefox'
+name='Firefox'

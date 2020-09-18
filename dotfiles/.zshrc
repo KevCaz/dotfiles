@@ -39,6 +39,9 @@ nw() {
 # edit zshrc
 alias zedit="atom ~/.zshrc"
 
+# edit source.list
+alias sedit="sudo nano /etc/apt/sources.list"
+
 # dropbox
 alias dbox='~/.dropbox-dist/dropboxd &'
 
@@ -106,17 +109,16 @@ alias seadoc='grep -rnw /home/kevcaz/ -e'
 alias seapkgi='apt-get list --installed | grep'
 
 # Go to Github directories
-alias gh='cd ~/Github'
-alias gha='cd ~/Github/Applications'
-alias ghb='cd ~/Github/Books'
-alias ghg='cd ~/Github/Gists'
-alias gho='cd ~/Github/Others'
-alias ghr='cd ~/Github/Rpackages'
-alias ghs='cd ~/Github/Studies'
-alias ght='cd ~/Github/Tutorials'
-alias ghw='cd ~/Github/Websites'
-alias ghm='cd ~/Github/mccannlab'
-alias dotfiles='cd ~/Github/Others/dotfiles'
+alias proj='cd ~/Projects'
+alias ghb='cd ~/Projects/books'
+alias ghg='cd ~/Projects/gists'
+alias ghr='cd ~/Projects/R'
+alias ght='cd ~/Projects/tutorials'
+alias ghw='cd ~/Projects/websites'
+alias ghm='cd ~/Projects/mccannlab'
+alias ghms='cd ~/Projects/manuscripts'
+alias dotfiles='cd ~/Applications/dotfiles && atom -a .'
+alias app='cd ~/Applications'
 
 ## Use bfg  https://rtyley.github.io/bfg-repo-cleaner/
 alias bfg='java -jar ~/.local/lib/java/bfg-1.13.0.jar'
@@ -124,7 +126,7 @@ alias bfg='java -jar ~/.local/lib/java/bfg-1.13.0.jar'
 # Create a gitignore dotfile with the MacOS most annoying file
 alias gig='echo ".DS_Store" > .gitignore'
 alias ged='git add -A; git commit --amend'
-alias ggp='sh ~/.kevcaz/emptybranchghpages'
+alias ggp='sh ~/.kevcaz/scripts/emptybranchghpages'
 
 # Generate ssh keys
 alias mykeygen='ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pages -N ""'
@@ -182,7 +184,7 @@ alias clean_r='rm -rf src/*.o src/*.so man'
 ## launch my website
 alias hukev='ghw && cd KevCaz.github.io && hugo server &; firefox http://localhost:1313/; fg;'
 ## launch inSileco local website
-alias insil='cd ~/Github/Websites/inSileco.github.io; Rscript --no-site-file -e "blogdown::serve_site()"'
+alias insil='cd ~/Projects/inSileco/inSileco.github.io; Rscript --no-site-file -e "blogdown::serve_site()"'
 
 
 
@@ -195,6 +197,13 @@ alias urlencode='python3 -c "import sys, urllib.parse as ul; \
 
 ## Julia
 alias judit='atom ~/.julia/config/startup.jl'
+alias julia='~/Applications/julia/julia'
+
+## sage 
+alias sage='~/Applications/sage/sage'
+
+## node 
+alias node='~/Applications/node/node'
 
 ## display my orcid
 alias orcid='echo "0000-0001-6619-9874"'
@@ -331,8 +340,7 @@ newbackup() {
   tar -czf $dir/Calibre.tar.gz --absolute-names ~/Calibre
 
   echo Now creating the last archive...
-  tar -czf $dir/other_important.tar.gz --absolute-names ~/Dropbox/noteuti.md /usr/lib/R/etc/Renviron.site ~/.local
-  cp /home/kevcaz/.local/share/dolphin-emu/GC/MemoryCard* $dir/
+  tar -czf $dir/other_important.tar.gz --absolute-names /usr/lib/R/etc/Renviron.site ~/.local
 }
 
 ## Install R packages
@@ -367,7 +375,7 @@ tocsv() {
 
 ##
 towebfonts() {
-  fontforge -script ~/.kevcaz/towebfonts.pe $1;
+  fontforge -script ~/.kevcaz/scripts/towebfonts.pe $1;
 }
 
 

@@ -56,8 +56,8 @@ source ~/.welcome
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
-  /home/kevcaz/.local/{bin,sbin}
-  /home/kevcaz/.kevcaz/r
+  /home/kevcaz/.local/{bin,sbin}  
+  /home/kevcaz/.kevcaz/scripts/r
   /home/kevcaz/.cargo/bin
   /home/kevcaz/Github/Applications/julia/usr/bin
   $path

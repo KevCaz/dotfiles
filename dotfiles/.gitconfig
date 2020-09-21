@@ -17,3 +17,5 @@
 	all = add -A
 [http]
 	sslVerify = true
+[pull]
+	rebase = false

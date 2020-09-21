@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Material Theme High Contrast",
     "files.associations": {
         "*.rmd": "markdown"
     },
@@ -61,5 +60,7 @@
         "yaml",
         "yml"
     ],
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Material Theme Darker"
 }

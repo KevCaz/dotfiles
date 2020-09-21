@@ -109,7 +109,6 @@ alias seadoc='grep -rnw /home/kevcaz/ -e'
 alias seapkgi='apt-get list --installed | grep'
 
 # Go to Github directories
-alias proj='cd ~/Projects'
 alias ghb='cd ~/Projects/books'
 alias ghg='cd ~/Projects/gists'
 alias ghr='cd ~/Projects/R'
@@ -117,8 +116,12 @@ alias ght='cd ~/Projects/tutorials'
 alias ghw='cd ~/Projects/websites'
 alias ghm='cd ~/Projects/mccannlab'
 alias ghms='cd ~/Projects/manuscripts'
-alias dotfiles='cd ~/Applications/dotfiles && atom -a .'
+alias dot='cd ~/Applications/dotfiles && atom -a .'
+alias pro='cd ~/Projects'
 alias app='cd ~/Applications'
+alias dow='cd ~/Downloads'
+alias doc='cd ~/Documets'
+alias kc='cd ~/.kevcaz'
 
 ## Use bfg  https://rtyley.github.io/bfg-repo-cleaner/
 alias bfg='java -jar ~/.local/lib/java/bfg-1.13.0.jar'
@@ -138,7 +141,8 @@ alias gorev='cd ~/Documents/Research/Reviews'
 alias gopci='cd ~/Documents/Reviews/PCI'
 
 alias gopas='atom -a ~/Documents/Admin/pass'
-alias notes='atom -a ~/.kevcaz/notes.md'
+alias n='atom -a ~/.kevcaz/docs/notes.md'
+alias notes='atom -a ~/.kevcaz/docs/notes.md'
 
 # change screen and keyboard backlight
 alias mysbl='sudo tee /sys/class/backlight/intel_backlight/brightness <<<'
@@ -326,9 +330,9 @@ newbackup() {
 
   echo Now copying /Documents...
   cp -r ~/Documents $dir
-  #
-  echo Now copying /Github...
-  cp -r ~/Github $dir
+  
+  echo Now copying /Projects...
+  cp -r ~/Projects $dir
 
   echo Now creating an archive of /Pictures...
   tar -czf $dir/Pict.tar.gz --absolute-names ~/Pictures
@@ -336,11 +340,8 @@ newbackup() {
   echo Now creating an archive of /Zotero...
   tar -czf $dir/Zotero.tar.gz --absolute-names ~/Zotero
 
-  echo Now creating an archive of /Calibre...
-  tar -czf $dir/Calibre.tar.gz --absolute-names ~/Calibre
-
   echo Now creating the last archive...
-  tar -czf $dir/other_important.tar.gz --absolute-names /usr/lib/R/etc/Renviron.site ~/.local
+  tar -czf $dir/other_important.tar.gz --absolute-names /usr/lib/R/etc/Renviron.site ~/.local ~/.kevcaz
 }
 
 ## Install R packages
@@ -393,11 +394,8 @@ junk() {
  }
 
 
-
 ## watch youtube video
 youtube-wt() {
   cvlc "$(youtube-dl -g -f mp4 $1)"
 }
-
-
 

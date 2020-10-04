@@ -1,14 +1,15 @@
-#### KevCaz's .Rprofile
-
-
-##-- options (explicit enough)
+# #### KevCaz's .Rprofile
+# 
+# 
+# ##-- options (explicit enough)
 options(
   prompt = "R> ",
   continue = "+... ",
   width = 80,
-  max.print = 2400
-  # repos = "https://cran.wu.ac.at/",
+  max.print = 2400,
+  repos = "https://cran.wu.ac.at/",
   # stringsAsFactors = FALSE
+  bookdown.render.file_scope = FALSE
 )
 ##-- X11 options
 grDevices::X11.options(width = 10, height = 10)

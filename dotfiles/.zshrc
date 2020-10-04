@@ -17,18 +17,12 @@ fi
 
 
 ########## ALIASES ##########
-# current directory in atom
-alias aa="atom -a ."
-# current directory in vscodium
-alias vs="codium -a ."
-
-
-############### ALIASES
 
 # current directory in atom
 alias aa="atom -a ."
 # current directory in vscodium
 alias vs="codium -a ."
+
 
 
 # New windows of file manager here
@@ -53,42 +47,6 @@ alias lls='ls -alh'
 # todolist
 alias todo='atom -a ~/Github/Others/toutdoux'
 
-# tp Raspberry Pi
-alias torasp="ssh pi@131.104.150.179"
-
-# Remoote access to my MacOS machine
-# See hostname -i
-alias tomac='ssh kevcaz-mbp@127.0.1.1'
-sendtomac() {
-  scp -rp $1 KevCaz@10.0.1.8:${2-./}
-}
-getfrommac() {
-  scp -rp KevCaz@10.0.1.8:$1 $2
-}
-
-alias gorasp='ssh pi@192.168.0.19'
-alias goraspX='ssh -X pi@192.168.0.19'
-getfromraps() {
-  scp -rp pi@192.168.0.19:${1-./} $2
-}
-sendtoraps() {
-  scp -rp pi@192.168.0.19:$1 ${2-./}
-}
-
-# Get access to Graham
-alias gograham='ssh kevcaz@graham.computecanada.ca'
-# Send something to Mp2
-sendgraham() {
-  scp -rp $1 kevcaz@graham.computecanada.ca:${2-./}
-}
-# Get from Mp2
-getgraham() {
-  scp -rp kevcaz@graham.computecanada.ca:$1 ${2-~/Downloads/servers/}
-}
-
-sendmarie() {
-  scp -rp $1 mariehbrice@marieh:${2-./}
-}
 
 
 # Searches
@@ -111,6 +69,7 @@ alias seapkgi='apt-get list --installed | grep'
 # Go to Github directories
 alias ghb='cd ~/Projects/books'
 alias ghg='cd ~/Projects/gists'
+alias ghi='cd ~/Projects/inSileco'
 alias ghr='cd ~/Projects/R'
 alias ght='cd ~/Projects/tutorials'
 alias ghw='cd ~/Projects/websites'
@@ -140,8 +99,7 @@ alias mykeygen='ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pa
 alias gorev='cd ~/Documents/Research/Reviews'
 alias gopci='cd ~/Documents/Reviews/PCI'
 
-alias gopas='atom -a ~/Documents/Admin/pass'
-alias n='atom -a ~/.kevcaz/docs/notes.md'
+alias gopas='atom -a ~/.kevcaz/docs/pass.md'
 alias notes='atom -a ~/.kevcaz/docs/notes.md'
 
 # change screen and keyboard backlight
@@ -209,10 +167,6 @@ alias sage='~/Applications/sage/sage'
 ## node 
 alias node='~/Applications/node/node'
 
-## display my orcid
-alias orcid='echo "0000-0001-6619-9874"'
-
-
 
 ########## FUNCTIONS ##########
 
@@ -274,6 +228,12 @@ outbox() {
   mv $@ ~/Dropbox/outBox/
 }
 
+# show and copy 
+function showandcopy() {
+  echo $1
+  echo -n $1 | xclip -selection clipboard
+}
+
 # Get a DOI using crossref https://stackoverflow.com/questions/9354847/concatenate-inputs-in-bash-script
 getDOI() {
   request=""
@@ -313,8 +273,8 @@ newreview() {
 }
 
 newdraft() {
-  NEWD=${1:-$RANDOM}
-  atom -a ~/Dropbox/_drafts/draft_$NEWD.md
+  NEWD=$(date '+%Y-%m-%d')${1:-$RANDOM}
+  atom -a ~/.kevcaz/docs/drafts/draft_$NEWD.md
 }
 
 
@@ -399,3 +359,5 @@ youtube-wt() {
   cvlc "$(youtube-dl -g -f mp4 $1)"
 }
 
+
+source ~/.kevcaz/docs/extralias.sh

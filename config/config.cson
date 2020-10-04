@@ -45,6 +45,12 @@
       "linter"
       "ask-stack"
       "Hydrogen"
+      "ide-r"
+      "ide-python"
+      "linter-ui-default"
+      "julia-client"
+      "language-julia"
+      "ink"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -54,7 +60,7 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Fira Code"
-    fontSize: 18
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.45
     scrollPastEnd: true
@@ -66,7 +72,7 @@
   "file-icons": {}
   "julia-client":
     consoleOptions: {}
-    currentVersion: "0.12.5"
+    currentVersion: "0.12.6"
     firstBoot: false
     juliaPath: "/home/kevcaz/Github/Applications/julia/usr/bin/julia"
     uiOptions:
@@ -79,6 +85,11 @@
     ]
   "linter-ui-default":
     panelHeight: 300
+  "markdown-preview-enhanced":
+    automaticallyShowPreviewOfMarkdownBeingEdited: false
+    closePreviewAutomatically: false
+    openPreviewPaneAutomatically: false
+    singlePreview: false
   "metro-ui":
     themeAccentColor: "#e97a43"
   minimap:

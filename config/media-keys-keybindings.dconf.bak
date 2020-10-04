@@ -1,5 +1,5 @@
 [/]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom13/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom14/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom15/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom16/']
 max-screencast-length=uint32 3600
 
 [custom-keybindings/custom0]
@@ -33,14 +33,19 @@ command='qgis'
 name='QGIS'
 
 [custom-keybindings/custom14]
-binding='<Super>b'
+binding='<Super>x'
 command='atom'
 name='Atom'
 
 [custom-keybindings/custom15]
-binding='<Super>x'
+binding='<Super>b'
 command='thunderbird'
 name='Thunderbird'
+
+[custom-keybindings/custom16]
+binding='<Super>d'
+command='discord'
+name='Discord'
 
 [custom-keybindings/custom2]
 binding='<Super>z'
@@ -58,17 +63,17 @@ command='/home/kevcaz/.kevcaz/scripts/tognuterm'
 name='Copy and send command to GNU terminal'
 
 [custom-keybindings/custom5]
-binding='<Super>j'
+binding='<Primary><Shift>g'
 command='/home/kevcaz/.kevcaz/scripts/toappli atom'
 name='Copy and send to Atom'
 
 [custom-keybindings/custom6]
-binding='<Super>d'
+binding='<Shift><Super>f'
 command='/home/kevcaz/.kevcaz/scripts/toappl firefox-esr'
 name='Copy and send to Firefox'
 
 [custom-keybindings/custom7]
-binding='<Primary><Super>e'
+binding='<Super>e'
 command='/home/kevcaz/.kevcaz/scripts/tonotes'
 name='Copy and send notes.md'
 

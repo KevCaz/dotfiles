@@ -12,7 +12,7 @@
     "editor.fontLigatures": true,
     "editor.cursorBlinking": "solid",
     "editor.rulers": [ 80 ],
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "editor.wordWrap": "bounded",
     "C_Cpp.updateChannel": "Insiders",
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
@@ -62,5 +62,9 @@
     ],
     "editor.renderWhitespace": "all",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Material Theme Darker"
+    "workbench.colorTheme": "Material Theme Palenight",
+    "materialTheme.accent": "Purple",
+    "workbench.iconTheme": "eq-material-theme-icons-palenight",
+    "workbench.preferredDarkColorTheme": "Community Material Theme Palenight",
+    "workbench.preferredLightColorTheme": "Community Material Theme Palenight"
 }

@@ -1,4 +1,4 @@
-#
+
 # Executes commands at the start of an interactive session.
 #
 # Authors:
@@ -48,6 +48,8 @@ alias lls='ls -alh'
 alias todo='atom -a ~/Github/Others/toutdoux'
 
 
+# pwd to clipborad  
+alias pwdc='pwd | xclip -selection clipboard'
 
 # Searches
 # Find processus
@@ -253,11 +255,11 @@ getDOI() {
 
 # Get a ref from a DOI
 getRef() {
- firefox http://sci-hub.tw/$1
+ firefox http://sci-hub.se/$1
 }
 # Get a pdf from a DOI
 getPdf() {
- wget "$(wget -qO- http://sci-hub.tw/$1 | grep iframe | grep -o 'https*://[^"]*')" -P ~/Downloads
+ wget "$(wget -qO- http://sci-hub.se/$1 | grep iframe | grep -o 'https*://[^"]*')" -P ~/Downloads
 }
 
 
@@ -276,7 +278,6 @@ newdraft() {
   NEWD=$(date '+%Y-%m-%d')${1:-$RANDOM}
   atom -a ~/.kevcaz/docs/drafts/draft_$NEWD.md
 }
-
 
 newrmd() {
   echo "---\nauthor: Kevin Cazelles\n---" > $1.Rmd
@@ -301,7 +302,7 @@ newbackup() {
   tar -czf $dir/Zotero.tar.gz --absolute-names ~/Zotero
 
   echo Now creating the last archive...
-  tar -czf $dir/other_important.tar.gz --absolute-names /usr/lib/R/etc/Renviron.site ~/.local ~/.kevcaz
+  tar -czf $dir/other_important.tar.gz --absolute-names /usr/lib/R/etc/Renviron.site ~/.local ~/.kevcaz ~/.gnupg ~/.password-store
 }
 
 ## Install R packages

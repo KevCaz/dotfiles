@@ -77,11 +77,12 @@ alias ght='cd ~/Projects/tutorials'
 alias ghw='cd ~/Projects/websites'
 alias ghm='cd ~/Projects/mccannlab'
 alias ghms='cd ~/Projects/manuscripts'
+alias ghq='cd ~/Projects/qcbs'
 alias dot='cd ~/Applications/dotfiles && atom -a .'
 alias pro='cd ~/Projects'
 alias app='cd ~/Applications'
 alias dow='cd ~/Downloads'
-alias doc='cd ~/Documets'
+alias doc='cd ~/Documents'
 alias kc='cd ~/.kevcaz'
 
 ## Use bfg  https://rtyley.github.io/bfg-repo-cleaner/

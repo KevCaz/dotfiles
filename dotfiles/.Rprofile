@@ -73,6 +73,12 @@ h <- utils::head
 # names
 nm <- base::names
 
+# convert doc 
+rmd <- function(x) rmarkdown::render(x, "all")
+
+# Update only package in 
+myupdate <- function() update.packages(Sys.getenv("R_LIBS_USER"), ask = FALSE)
+
 ##-- data science packages
 dasci <- function() {
   lapply(

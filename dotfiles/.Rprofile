@@ -76,7 +76,7 @@ nm <- base::names
 # convert doc 
 rmd <- function(x) rmarkdown::render(x, "all")
 
-# Update only package in 
+# Update only packages found in R_LIBS_USER
 myupdate <- function() update.packages(Sys.getenv("R_LIBS_USER"), ask = FALSE)
 
 ##-- data science packages

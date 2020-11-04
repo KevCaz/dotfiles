@@ -39,6 +39,9 @@ alias sedit="sudo nano /etc/apt/sources.list"
 # dropbox
 alias dbox='~/.dropbox-dist/dropboxd &'
 
+# duf 
+alias duf='~/Applications/duf/duf'
+
 
 # to display hidden files
 alias ls='ls -a'
@@ -120,11 +123,13 @@ alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 ## update debian packages
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
 ## update python packages
-alias updpy='
+alias uppy='
   for i in  $(pip list --outdated --format=columns |tail -n +3|cut -d" " -f1); do pip install --user $i --upgrade
   done'
-## update R package
-alias updrp='Rscript --no-init-file -e "devtools::update_packages()"'
+## update R package in 'R_LIBS_USER'
+alias upr='Rscript --no-init-file -e "update.packages(Sys.getenv(\"R_LIBS_USER\"), ask = FALSE)"'
+## update Julia packages 
+alias upj='julia -e "using Pkg; Pkg.update()"'
 
 
 ## update my publication

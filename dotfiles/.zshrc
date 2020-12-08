@@ -42,6 +42,8 @@ alias dbox='~/.dropbox-dist/dropboxd &'
 # duf 
 alias duf='~/Applications/duf/duf'
 
+# password manager 
+alias pc='pass -c'
 
 # to display hidden files
 alias ls='ls -a'
@@ -75,6 +77,7 @@ alias seapkgi='apt-get list --installed | grep'
 alias ghb='cd ~/Projects/books'
 alias ghg='cd ~/Projects/gists'
 alias ghi='cd ~/Projects/inSileco'
+alias ghii='cd ~/Projects/inSilecoInc'
 alias ghr='cd ~/Projects/R'
 alias ght='cd ~/Projects/tutorials'
 alias ghw='cd ~/Projects/websites'
@@ -203,7 +206,14 @@ permi(){
 rinstall() {
   for pkg in "$@"
   do
-    Rscript -e "install.packages('$pkg')"
+    Rscript --no-init-file -e "install.packages('$pkg')"
+  done
+}
+
+rinstallgh() {
+  for pkg in "$@"
+  do
+    Rscript --no-init-file -e "remotes::install_github('$pkg', upgrade = 'never')"
   done
 }
 
@@ -357,7 +367,7 @@ chgext() {
 
 ## Send to trash
 junk() {
-  mv "$@" ~/.Trash/;
+  mv "$@" ~/.local/share/Trash/files;
  }
 
 

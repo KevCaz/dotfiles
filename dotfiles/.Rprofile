@@ -54,10 +54,6 @@ ld <- function() {
   devtools::load_all()
   devtools::document()
 }
-ldl <- function() {
-  ld()
-  devtools::load_all()
-}
 ldt <- function() {
   ld()
   devtools::test()
@@ -66,6 +62,8 @@ ldc <-  function() {
   ld()
   devtools::check()
 }
+# test + filter
+testf <- function(x) devtools::test(filter = x)
 # Mapview shortcut
 mpv <- mapview::mapview
 # head shortcut
@@ -101,7 +99,7 @@ get_pkg_bib <- function(pkg) {
 
 # get my pubs
 mypubs <- function(orcid = "0000-0001-6619-9874",
-  filename = "~/Github/Others/CV_latex/pubs.bib", rm = TRUE) {
+  filename = "~/Projects/documents/CV_latex/pubs.bib", rm = TRUE) {
   my_dois <- unique(rorcid::identifiers(rorcid::works(orcid)))
   pubs <- rcrossref::cr_cn(dois = my_dois, format = "bibtex")
   if (rm) file.remove(filename)

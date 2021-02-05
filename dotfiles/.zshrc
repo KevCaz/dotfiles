@@ -16,6 +16,13 @@ fi
 [ -f /home/kevcaz/.travis/travis.sh ] && source /home/kevcaz/.travis/travis.sh
 
 
+########## VARIABLES ##########
+
+export R_LIBS_USER="/home/kevcaz/Applications/R_4_0"
+
+
+
+
 ########## ALIASES ##########
 
 # current directory in atom
@@ -49,9 +56,11 @@ alias pc='pass -c'
 alias ls='ls -a'
 alias lls='ls -alh'
 
-# todolist
-alias todo='atom -a ~/Github/Others/toutdoux'
+# 
+alias mydu='du -Shc -d 1' 
 
+# youtube-dl -f 140 (audio only)
+alias yda='youtube-dl -f 140'
 
 # pwd to clipborad  
 alias pwdc='pwd | xclip -selection clipboard'
@@ -138,6 +147,7 @@ alias upj='julia -e "using Pkg; Pkg.update()"'
 ## update my publication
 alias mypubs='R -e "mypubs()"'
 
+
 ## update atom
 alias atomup='aria2c https://atom.io/download/deb && sudo dpkg -i atom-amd64.deb && rm atom-amd64.deb'
 
@@ -221,6 +231,13 @@ convR() {
   FROM=${2:-fahrenheit}
   TO=${3:-celsius}
   Rscript -e "conv('$1', '$FROM', '$TO')"
+}
+
+chrome_pdf() {
+  for fl in "$@"
+  do
+    Rscript --no-init-file -e "pagedown::chrome_print('$fl')"
+  done
 }
 
 # Search new package
@@ -367,7 +384,7 @@ chgext() {
 
 ## Send to trash
 junk() {
-  mv "$@" ~/.local/share/Trash/files;
+  mv "$@" ~/.loca/share/Trash/files;
  }
 
 

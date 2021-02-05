@@ -7,8 +7,7 @@ options(
   continue = "+... ",
   width = 80,
   max.print = 2400,
-  repos = "https://cran.wu.ac.at/",
-  # stringsAsFactors = FALSE
+  repos = c(CRAN = "https://cran.wu.ac.at/"),
   bookdown.render.file_scope = FALSE
 )
 ##-- X11 options
@@ -64,13 +63,11 @@ ldc <-  function() {
 }
 # test + filter
 testf <- function(x) devtools::test(filter = x)
-# Mapview shortcut
-mpv <- mapview::mapview
+
 # head shortcut
 h <- utils::head
 # names
 nm <- base::names
-
 # convert doc 
 rmd <- function(x) rmarkdown::render(x, "all")
 
@@ -114,6 +111,56 @@ easy_torrent <- function(x, mx = 20, path = "~/Downloads") {
   omdbr:::get_torrent(df$imdbid[id], path = path, open = TRUE)
   invisible(NULL)
 }
+
+
+
+# Spatial 
+
+## Mapview shortcut
+mpv <- function(...) mapview::mapview(...)
+
+## readSpatial
+readSpatial <- function(con, crs = 4326) { 
+  # rds 
+  if (grepl("\\.[Rr]ds", con)) {
+    out <- readRDS(con)
+  } else {
+    out <- read_sf_try(con, crs = crs)
+    if (isFALSE(out)) {
+      out <- read_stars_try(con, crs = crs)
+    }
+    if (isFALSE(out)) {
+      msgError("cannot read", con)
+      out <- NULL 
+    } 
+  }
+  out
+}
+
+read_sf_try <- function(con, crs = 4326) {
+  out <- tryCatch(sf::st_read(con, quiet = TRUE), error = function(x) FALSE)
+  if ("sf" %in% class(out) & identical(sf::st_crs(out), sf::st_crs(crs))) {
+    out <- sf::st_transform(out, crs = crs)
+  }
+  out
+}
+
+read_stars_try <- function(con, crs = 4326) {
+  if (grepl("*.ncdf$", tolower(con))) {
+    stars::read_ncdf(con)
+  } else {
+      out <- tryCatch(stars::read_stars(con), error = function(x) FALSE)
+      if ("stars" %in% class(out) & identical(sf::st_crs(out), sf::st_crs(crs))) {   
+        out <- sf::st_transform(out, crs = crs)
+      }
+  }
+  out
+}
+
+## Read + Mapview 
+rmpv <- function(x) mpv(readSpatial(x))
+
+
 
 # # Add beer
 # add_microbrew <- function(name, pos, address) {

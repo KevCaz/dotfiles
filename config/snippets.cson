@@ -21,12 +21,18 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
 '.source.gfm':
+  'Code chunk': 
+    'prefix': 'cc'
+    'body': '```{R}\n$1\n```'
   'Fontawesome':
     'prefix': 'fa'
     'body': '<i class="fa fa-$1" aria-hidden="true"></i>$2'
   'CRAN':
     'prefix': 'cran'
     'body': '[`$1`](https://CRAN.R-project.org/package=$1)'
+  'eval_false':
+    'prefix': 'eva'
+    'body': 'eval = FALSE'
   'Travis':
     'prefix': 'trav'
     'body': '[Travis](https://travis-ci.org/)'
@@ -39,6 +45,9 @@
   'figcenter':
     'prefix': 'fig'
     'body': '{{< figcenter path$1 $2 >}}'
+  'fontawesome with R':
+    'prefix': 'rfa'
+    'body': '`r icon::fontawesome("$1")`'
   'DOI':
     'prefix': 'doi'
     'body': '{{< doi "$1" >}}'
@@ -57,6 +66,9 @@
   'dataframe':
     'prefix': 'dat'
     'body': 'data.frame($1)'
+  'lonlat':
+    'prefix': 'lon'
+    'body': 'c("longitude", "latitude")'
   'plot':
     'prefix': 'plot'
     'body': 'plot($1, $2, xlab = "", ylab = "", pch = 1, las = 1)'

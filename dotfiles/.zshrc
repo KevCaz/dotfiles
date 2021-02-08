@@ -49,6 +49,9 @@ alias dbox='~/.dropbox-dist/dropboxd &'
 # duf 
 alias duf='~/Applications/duf/duf'
 
+# vlc 
+alias vlc='flatpak run org.videolan.VLC'
+
 # password manager 
 alias pc='pass -c'
 

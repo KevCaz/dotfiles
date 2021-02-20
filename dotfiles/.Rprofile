@@ -19,9 +19,6 @@ grDevices::X11.options(width = 10, height = 10)
 options(usethis.full_name = "Kevin Cazelles")
 
 ##-- few useful functions
-clr <- function() system('clear')
-reset <- function() system('reset')
-#
 getCit <- function(x)
   cat(toBibtex(citation(x)), file = paste0(x, '.bib'), sep = "\n")
 #

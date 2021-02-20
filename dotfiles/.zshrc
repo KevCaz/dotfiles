@@ -139,6 +139,7 @@ alias tor='cd ~/Tor; ./start-tor-browser.desktop'
 alias updeb='sudo apt-get update && sudo apt-get upgrade'
 ## update python packages
 alias uppy='
+  /usr/bin/python3 -m pip install --upgrade pip
   for i in  $(pip list --outdated --format=columns |tail -n +3|cut -d" " -f1); do pip install --user $i --upgrade
   done'
 ## update R package in 'R_LIBS_USER'
@@ -146,6 +147,16 @@ alias upr='Rscript --no-init-file -e "update.packages(Sys.getenv(\"R_LIBS_USER\"
 ## update Julia packages 
 alias upj='julia -e "using Pkg; Pkg.update()"'
 
+## update flatpak 
+alias upfl='flatpak update'
+
+## update allç
+alias upall='
+  upj
+  upr
+  upfl
+  updeb
+'
 
 ## update my publication
 alias mypubs='R -e "mypubs()"'
@@ -338,7 +349,7 @@ newbackup() {
   tar -czf $dir/Zotero.tar.gz --absolute-names ~/Zotero
 
   echo Now creating the last archive...
-  tar -czf $dir/other_important.tar.gz --absolute-names /usr/lib/R/etc/Renviron.site ~/.local ~/.kevcaz ~/.gnupg ~/.password-store
+  tar -czf $dir/other_important.tar.gz --absolute-names /usr/lib/R/etc/Renviron.site ~/.local ~/.kevcaz ~/.gnupg ~/.password-store ~/.ssh
 }
 
 ## Install R packages

@@ -30,7 +30,7 @@ alias aa="atom -a ."
 # current directory in vscodium
 alias vs="codium -a ."
 
-
+alias cleantex="rm *.log *.aux *.bbl *.blg"
 
 # New windows of file manager here
 nw() {
@@ -62,8 +62,10 @@ alias lls='ls -alh'
 # 
 alias mydu='du -Shc -d 1' 
 
-# youtube-dl -f 140 (audio only)
-alias yda='youtube-dl -f 140'
+#
+alias schcrwlr='
+  sudo docker run -v $(pwd):/home/schcrwlr/share --name schemacrawler \
+  --rm -i -t --entrypoint=/bin/bash schemacrawler/schemacrawler'
 
 # pwd to clipborad  
 alias pwdc='pwd | xclip -selection clipboard'
@@ -109,6 +111,7 @@ alias bfg='java -jar ~/.local/lib/java/bfg-1.13.0.jar'
 # Create a gitignore dotfile with the MacOS most annoying file
 alias gig='echo ".DS_Store" > .gitignore'
 alias ged='git add -A; git commit --amend'
+alias gedi='git add -A; git commit --amend --reuse-message HEAD'
 alias ggp='sh ~/.kevcaz/scripts/emptybranchghpages'
 
 # Generate ssh keys
@@ -220,6 +223,7 @@ meteo() {
   curl wttr.in/$1
 }
 
+
 # Linux permissions
 permi(){
   curl cheat.sh/chmod/$1
@@ -310,6 +314,13 @@ getPdf() {
 }
 
 
+# youtube-dl -f 140 (audio only)
+yda() {
+  for fl in "$@"
+  do
+    youtube-dl -f 140 -o '~/Music/yda/%(title)s.%(ext)s' $fl
+  done
+}
 
 ## New review
 newreview() {

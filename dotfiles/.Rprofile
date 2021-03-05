@@ -13,6 +13,9 @@ options(
 ##-- X11 options
 grDevices::X11.options(width = 10, height = 10)
 
+
+# if (interactive()) prompt::set_prompt(prompt::prompt_fancy)
+
 ##-- libpaths
 # .libPaths("/home/kevcaz/R/x86_64-pc-linux-gnu-library/3.5")
 
@@ -50,6 +53,11 @@ ld <- function() {
   devtools::load_all()
   devtools::document()
 }
+ldl <- function() {
+  devtools::load_all()
+  devtools::document()
+  devtools::load_all()
+}
 ldt <- function() {
   ld()
   devtools::test()
@@ -60,6 +68,9 @@ ldc <-  function() {
 }
 # test + filter
 testf <- function(x) devtools::test(filter = x)
+
+# targets 
+tgm <- targets::tar_make
 
 # head shortcut
 h <- utils::head

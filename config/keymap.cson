@@ -8,4 +8,5 @@
   'cmd-alt-b': 'insert-breakline'
   'cmd-alt-f': 'insert-shortcode'
   'cmd-alt-o': 'insert-exlusive-or'
+  'cmd-alt-w': 'editor:transpose'
   # 'ctrl-alt-enter': 'platformio-ide-terminal:insert-selected-text'
